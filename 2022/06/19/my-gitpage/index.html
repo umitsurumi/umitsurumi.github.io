@@ -5,12 +5,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Archive: 2022/6</title>
+    <title>Gitpage折腾笔记 - 乌弥的小屋</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="Umi&#39;s Home,"> 
-    
+    <meta name="description" content="利用Hexo和Gitpage搭建blog小站的笔记记录，算是把过程中踩过的小坑做个总结。
+##gitpage建站主要参看github的官方文档。
+###创建站点
+
+在github网站任何页面的右上角,"> 
     <meta name="author" content="Umi"> 
     <link rel="alternative" href="atom.xml" title="乌弥的小屋" type="application/atom+xml"> 
     <link rel="icon" href="/umi.github.io/img/favicon.png"> 
@@ -18,16 +22,24 @@
     
     
     <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:title" content="Archive: 2022/6"/>
-    
+    <meta name="twitter:title" content="Gitpage折腾笔记 - 乌弥的小屋"/>
+    <meta name="twitter:description" content="利用Hexo和Gitpage搭建blog小站的笔记记录，算是把过程中踩过的小坑做个总结。
+##gitpage建站主要参看github的官方文档。
+###创建站点
+
+在github网站任何页面的右上角,"/>
     
     
     
     
     <meta property="og:site_name" content="乌弥的小屋"/>
     <meta property="og:type" content="object"/>
-    <meta property="og:title" content="Archive: 2022/6"/>
-    
+    <meta property="og:title" content="Gitpage折腾笔记 - 乌弥的小屋"/>
+    <meta property="og:description" content="利用Hexo和Gitpage搭建blog小站的笔记记录，算是把过程中踩过的小坑做个总结。
+##gitpage建站主要参看github的官方文档。
+###创建站点
+
+在github网站任何页面的右上角,"/>
     
 <link rel="stylesheet" href="/umi.github.io/css/diaspora.css">
 
@@ -37,39 +49,88 @@
 <body class="loading">
     <span id="config-title" style="display:none">乌弥的小屋</span>
     <div id="loader"></div>
-    <div id="single" class="page">
-    <div id="top">
-        <a class="iconfont icon-left image-icon" href="javascript:history.back()"></a>
-    </div>
-    <div class="section">
-        <div class="article">
-            <div class="main">
-                <div class="content">
-                    <div class="timeline">
-                      <h2 class="timeline-title">归档: 2篇</h2><hr>
-                      
-                      
-                        
-                          <h3 class="timeline-subtitle">2022</h3>
-                        
-                        <div class="timeline-item">
-                          <time>2022-06-19</time>
-                          <a target="_self" href="/umi.github.io/2022/06/19/my-gitpage/">Gitpage折腾笔记</a>
-                        </div>
-                      
-                        
-                        <div class="timeline-item">
-                          <time>2022-06-18</time>
-                          <a target="_self" href="/umi.github.io/2022/06/18/hello-world/">Hello World</a>
-                        </div>
-                      
-                    </div>
-                </div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="https://github.com/umitsurumi/umi.github.io/blog"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">Gitpage折腾笔记</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
             </div>
+            <div id="qr"></div>
         </div>
     </div>
+    <div class="scrollbar"></div>
 </div>
 
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">Gitpage折腾笔记</h1>
+        <div class="stuff">
+            <span>六月 19, 2022</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/umi.github.io/tags/gitpage/" rel="tag">gitpage</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/umi.github.io/tags/hexo/" rel="tag">hexo</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <p>利用Hexo和Gitpage搭建blog小站的笔记记录，算是把过程中踩过的小坑做个总结。</p>
+<p>##gitpage建站<br>主要参看<a herf="https://docs.github.com/cn/pages/quickstart">github的官方文档</a>。</p>
+<p>###创建站点</p>
+<ol>
+<li>在github网站任何页面的右上角，使用<code>+</code>下拉菜单选择里面的<code>New  repository</code>新建仓库。</li>
+<li>输入<code>username.github.io</code>作为仓库名。<br>实际上不用<code>username</code>也可以，但是在后续设置的时候会有需要注意的地方。<br><img src="../../blogs-image/my-gitpage/create-page-1.png" alt="gitpage说明图"></li>
+<li>在仓库中，点击<code>Setting</code>，在边栏的<code>Code and automation</code>部分，选择<code>Pages</code>。</li>
+<li>之后点击<code>Choose a theme</code>然后选择一个主题，选择完成后<code>README.MD</code>会自动打开，到这一步gitpage页面就已经生成了。<br><img src="../../blogs-image/my-gitpage/create-page-2.png" alt="gitpage建站说明图"></li>
+<li>访问<code>username.github.io</code>就可以看见刚才创建的站点了。<br><img src="../../blogs-image/my-gitpage/create-page-3.png" alt="gitpage建站说明图"></li>
+</ol>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title="0" data-url="http://link.hhtjim.com/163/425570952.mp3"></li>
+                        
+                    
+                        
+                            <li title="1" data-url="http://link.hhtjim.com/163/425570952.mp3"></li>
+                        
+                    
+                </ul>
+            
+        </div>
+        
+    <div id="gitalk-container" class="comment link"
+		data-enable="false"
+        data-ae="false"
+        data-ci=""
+        data-cs=""
+        data-r=""
+        data-o=""
+        data-a=""
+        data-d="false"
+    >查看评论</div>
+
+
+    </div>
+    
+        <div class="side">
+				
+        </div>
+    
+</div>
+
+
+    </div>
+</div>
 </body>
 
 
