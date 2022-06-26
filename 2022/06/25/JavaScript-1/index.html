@@ -1,0 +1,313 @@
+
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>JavaScript学习笔记-1 - 乌弥的小屋</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Umi&#39;s Home,"> 
+    <meta name="description" content="初学前端笔记整理，JavaScript部分的笔记主要参考《现代JavaScript教程》和《JavaScript高级程序设计》。
+什么是JavaScript历史回顾1995年，网景公司的布兰登·艾奇,"> 
+    <meta name="author" content="Umi"> 
+    <link rel="alternative" href="atom.xml" title="乌弥的小屋" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+    
+    
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="JavaScript学习笔记-1 - 乌弥的小屋"/>
+    <meta name="twitter:description" content="初学前端笔记整理，JavaScript部分的笔记主要参考《现代JavaScript教程》和《JavaScript高级程序设计》。
+什么是JavaScript历史回顾1995年，网景公司的布兰登·艾奇,"/>
+    
+    
+    
+    
+    <meta property="og:site_name" content="乌弥的小屋"/>
+    <meta property="og:type" content="object"/>
+    <meta property="og:title" content="JavaScript学习笔记-1 - 乌弥的小屋"/>
+    <meta property="og:description" content="初学前端笔记整理，JavaScript部分的笔记主要参考《现代JavaScript教程》和《JavaScript高级程序设计》。
+什么是JavaScript历史回顾1995年，网景公司的布兰登·艾奇,"/>
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+    <script>window.searchDbPath = "/search.xml";</script>
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">乌弥的小屋</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="https://umitsurumi.github.io"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">JavaScript学习笔记-1</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">JavaScript学习笔记-1</h1>
+        <div class="stuff">
+            <span>六月 25, 2022</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/JavaScript/" rel="tag">JavaScript</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <p>初学前端笔记整理，JavaScript部分的笔记主要参考<a herf="https://zh.javascript.info/">《现代JavaScript教程》</a>和<a herf="https://m.ituring.com.cn/book/2472">《JavaScript高级程序设计》</a>。</p>
+<h2 id="什么是JavaScript"><a href="#什么是JavaScript" class="headerlink" title="什么是JavaScript"></a>什么是JavaScript</h2><h3 id="历史回顾"><a href="#历史回顾" class="headerlink" title="历史回顾"></a>历史回顾</h3><p>1995年，网景公司的布兰登·艾奇（Brendan Eich）开发了一款名为LiveScript的脚本语言。后因当时Java的火热，网景公司又将其更名为JavaScript。<br>1996年，微软的IE3发布，其中包含了名为的JScript的JavaScript实现。<br>1997年，JavaScript 1.1作为提案被交给欧洲计算机制造商协会（ECMA），由第39技术委员会（TC39）进行标准化工作。ECMA-262，也就是ECMAScript这个新的脚本语言标准。<br>1998，国际标准化组织（ISO）和国际电工委员会（IEC）也将ECMAScript采纳为标准，自此以后，各家浏览器均以ECMAScript作为自己JavaScript实现的依据。<br>ECMA-262最新版本为第12版，发布于2021年6月。</p>
+<h3 id="JavaScript的实现"><a href="#JavaScript的实现" class="headerlink" title="JavaScript的实现"></a>JavaScript的实现</h3><p>JavaScript是一种在客户端运行的脚本语言，不需要编译，由js解释器<strong>逐行</strong>解释并执行。<br>某种程度上JavaScript和ECMAScript基本上可以视作同义词，但JavaScript远不止ECMA-262定义的内容。完整的JavaScript实现包含了三个部分：核心（ECMAScript）、文档对象模型（DOM）和浏览器对象模型（BOM）。</p>
+<ul>
+<li>ECMAScript：是ECMA-262定义的语言。web浏览器只是ECMAScript实现可能存在的一种宿主环境。</li>
+<li>DOM：文档对象模型（Document Object Model），提供了于网页内容交互的方法和接口。</li>
+<li>BOM：浏览器对象模型（Browser Object Model），提供了用于访问和操作浏览器窗口的API。</li>
+</ul>
+<h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello, World!"></a>Hello, World!</h2><h3 id="script标签"><a href="#script标签" class="headerlink" title="script标签"></a>script标签</h3><p>通过使用<code>script</code>标签，几乎可以在HTML文档的任何位置插入JavaScript代码，例如：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">title</span>&gt;</span>Hello, World!<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">p</span>&gt;</span>这会弹出一个&quot;Hello, World!&quot;对话框<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"> <span class="title function_">alert</span>(<span class="string">&#x27;Hello, World!&#x27;</span>) </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>在HTML文档中引入JavaScript的方法有三种，除了上面的内嵌式外，还有行内式和外部引用的办法：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--行内式--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">value</span>=<span class="string">&quot;按钮&quot;</span> <span class="attr">onclick</span>=<span class="string">&quot;alert(&#x27;这是行内式&#x27;)&quot;</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--外部引用，可以使用相对路径，也可以提供完整的URL地址，多个脚本需要使用多个标签--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;../path/to/script_1.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;../path/to/script_2.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="常用交互"><a href="#常用交互" class="headerlink" title="常用交互"></a>常用交互</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//alert(&quot;msg&quot;)显示一条信息，等待用户按下</span></span><br><span class="line"><span class="title function_">alert</span>(<span class="string">&#x27;Hello!&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//prompt(&quot;msg&quot;,[default])</span></span><br><span class="line"><span class="comment">//msg是显示给用户的文本,default是input框的初始值</span></span><br><span class="line"><span class="keyword">let</span> name = <span class="title function_">prompt</span>(<span class="string">&quot;What&#x27;s your name?&quot;</span>, <span class="string">&quot;Tom&quot;</span>);</span><br><span class="line"><span class="title function_">alert</span>(<span class="string">&#x27;Your name is &#x27;</span>+ name);</span><br><span class="line"></span><br><span class="line"><span class="comment">//confirm(question)显示一个question和确定取消两个按钮的窗口</span></span><br><span class="line">result = <span class="title function_">confirm</span>(question);</span><br><span class="line"></span><br><span class="line"><span class="comment">//console.log()浏览器控制台打印输出信息</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;Hi!&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<h2 id="语言基础"><a href="#语言基础" class="headerlink" title="语言基础"></a>语言基础</h2><h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><ul>
+<li>JavaScript中一切都<strong>区分大小写</strong>。</li>
+<li>标识符第一个字符必须是字母、下划线<code>_</code>或者美元符号<code>$</code>，第二个字符开始可以有数字。</li>
+<li>标识符最好采用小驼峰式写法，即第一个单词首字母小写，后面每个单词首字母大写。</li>
+<li>严格模式<code>&quot;use strict&quot;</code>，添加在整个脚本文件的顶部，会对整个脚本文件都启用严格模式。</li>
+<li>语句以分号<code>;</code>结尾，代码块则由<code>&#123;&#125;</code>标识，<code>//</code>和<code>/*...*/</code>分别表示单行和多行注释。<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&quot;use strict&quot;</span></span><br><span class="line"><span class="comment">/*这是一个多行注释</span></span><br><span class="line"><span class="comment">下面的代码用于获取用户输入姓名并显示欢迎信息*/</span></span><br><span class="line"><span class="keyword">let</span> userName = <span class="title function_">prompt</span>(<span class="string">&quot;What&#x27;s your name?&quot;</span>, <span class="string">&quot;Tom&quot;</span>); <span class="comment">//获取用户名</span></span><br><span class="line"><span class="title function_">alert</span>(<span class="string">&quot;Welcome, &quot;</span> + userName + <span class="string">&quot;!&quot;</span>); <span class="comment">//欢迎信息</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><p>JavaScript变量是松散类型的，可以用于保存任何类型的数据。<br>声明变量有三个关键字<code>var</code>、<code>let</code>和<code>const</code>，其中<code>let</code>和<code>const</code>在ES6以后才可以使用。</p>
+<h4 id="var"><a href="#var" class="headerlink" title="var"></a>var</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> message;    <span class="comment">//声明变量</span></span><br><span class="line"><span class="keyword">var</span> message = <span class="string">&quot;Hello World!&quot;</span>;    <span class="comment">//声明变量并赋初值</span></span><br><span class="line">message = <span class="number">100</span>;    <span class="comment">//可以改变变量的值和值的类型(合法，但不建议)</span></span><br><span class="line"><span class="keyword">var</span> message = <span class="string">&quot;hi&quot;</span>,</span><br><span class="line">    age = <span class="number">27</span>,</span><br><span class="line">    flag = <span class="literal">true</span>;    <span class="comment">//同时声明多个变量</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>使用<code>var</code>在函数内部定义的变量，会成为函数的局部变量。</li>
+<li>使用<code>var</code>在函数内部定义变量时，所有变量声明会提升（hoist）到函数顶部。</li>
+<li>反复多次使用<code>var</code>声明同一个变量也不会有问题。</li>
+</ul>
+<h4 id="lef"><a href="#lef" class="headerlink" title="lef"></a>lef</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(<span class="literal">true</span>) &#123;</span><br><span class="line">   <span class="keyword">var</span> message1 = <span class="string">&#x27;hi&#x27;</span>;</span><br><span class="line">   <span class="variable language_">console</span>.<span class="title function_">log</span>(message1);</span><br><span class="line">&#125;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(message1);    <span class="comment">//没有报错，var声明范围是函数作用域</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(<span class="literal">true</span>) &#123;</span><br><span class="line">  <span class="keyword">let</span> message2 = <span class="string">&#x27;hi&#x27;</span>;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(message2);</span><br><span class="line">&#125;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(message2);    <span class="comment">//报错，let声明范围是块作用域</span></span><br></pre></td></tr></table></figure>
+
+<p><code>let</code>与<code>var</code>的使用方法大体相同，但是两者却有着重要的区别：</p>
+<ul>
+<li><strong>声明的范围不同</strong>（见上例）。</li>
+<li>let不允许同一个块作用域中出现冗余声明。</li>
+<li>let声明的变量不会在作用域中被提升。</li>
+<li>let声明在全局作用域中不会成为window对象的属性。</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">1</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">  <span class="keyword">var</span> j = <span class="number">6</span>; </span><br><span class="line">&#125; </span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(i);    <span class="comment">//输出5，i在循环结束后可见，它是一个全局变量</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">loh</span>(j);    <span class="comment">//输出6，j在循环结束后可见，它是一个全局变量</span></span><br></pre></td></tr></table></figure>
+<p>对于<code>var</code>声明更为经典的一个例子如下：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; ++i) &#123;</span><br><span class="line">  <span class="built_in">setTimeout</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(i);</span><br><span class="line">  &#125;, <span class="number">0</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//你以为的输出：0、1、2、3、4</span></span><br><span class="line"><span class="comment">//实际上的输出：5、5、5、5、5</span></span><br></pre></td></tr></table></figure>
+<p>这一问题涉及到了作用域、闭包、异步等内容。此处贴一个<a herf="https://www.cnblogs.com/destinyruru/p/5823760.html">博客园的讲解</a>。<br>如果只想要达到设想中的输出效果，将<code>var</code>改成<code>let</code>即可。</p>
+<h4 id="const"><a href="#const" class="headerlink" title="const"></a>const</h4><p>const的行为与let基本相同。<br>唯一的重要区别：const必须在<strong>声明的同时初始化</strong>变量且之后<strong>不允许</strong>修改。<br>如果const变量引用的是一个对象，修改对象内部的属性<strong>不违反</strong>const限制。</p>
+<p>建议：<strong>不要</strong>使用<code>var</code>。优先考虑<code>const</code>，对需要修改的变量再使用<code>let</code>。</p>
+<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><p>JavaScript中有8种基本的数据类型，其中包含了7种原始类型和1种引用类型。<br>但JavaScript是一种动态类型（Dynamically Typed）的语言，意味着虽然有数据类型，但定义的变量并不会在定义后被限制为某一种数据类型。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> message = <span class="string">&#x27;Hello&#x27;</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="keyword">typeof</span> message);    <span class="comment">//string</span></span><br><span class="line">message = <span class="number">123456</span>;    <span class="comment">//不会有报错</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="keyword">typeof</span> message);    <span class="comment">//number</span></span><br></pre></td></tr></table></figure>
+<p><code>typeof</code>操作符会返回参数的类型。</p>
+<h4 id="String"><a href="#String" class="headerlink" title="String"></a>String</h4><p>表示零个或多个16位unicode字符序列。JavaScript中字符串必须写在引号内。<br>引号可以用双引号、单引号或者反引号，双引号和单引号都是简单的引用，使用上几乎没有什么区别。<br>反引号是<strong>功能扩展</strong>的引号，允许通过将变量或者表达式包装在<code>$&#123;...&#125;</code>中来将它们嵌入到字符串。<br>JavaScript中字符串是<strong>不可变的</strong>。要想修改变量中的字符串值，必须先销毁原始字符串，再将含新值的字符串保存到变量中。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> userName = <span class="title function_">prompt</span>(<span class="string">&quot;What&#x27;s your name?&quot;</span>, <span class="string">&quot;Tom&quot;</span>);</span><br><span class="line"><span class="title function_">alert</span>(<span class="string">`Welcome, <span class="subst">$&#123;userName&#125;</span>!`</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="keyword">typeof</span> userName);    <span class="comment">//string</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Number"><a href="#Number" class="headerlink" title="Number"></a>Number</h4><p>Number类型使用IEEE 754格式表示整数和浮点数（某些语言中的双精度值）。<br>整数除了十进制以外，也可以使用八进制或十六进制，但是在运算时都会被当作十进制进行运算。<br>定义浮点数必须包含小数点<code>.</code>，且后面必须有一个不为零的数字，否则JavaScript会将其转换为整数。<br>涉及到JavaScript中浮点数，更为经典的一个问题是<a herf="https://www.javascriptc.com/books/nodejs-roadmap/javascript/floating-point-number-0.1-0.2.html">0.1 + 0.2为什么不等于0.3</a>。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> num1 = <span class="number">55</span>;    <span class="comment">//十进制整数55</span></span><br><span class="line"><span class="keyword">let</span> num2 = <span class="number">0o15</span>;    <span class="comment">//八进制整数13</span></span><br><span class="line"><span class="keyword">let</span> num3 =  <span class="number">0x1A</span>;    <span class="comment">//十六进制整数26</span></span><br><span class="line"><span class="keyword">let</span> floatNum1 = <span class="number">1.</span>;    <span class="comment">//小数点后没有数字，被当作整数1</span></span><br><span class="line"><span class="keyword">let</span> floatNum2 = <span class="number">3.0</span>;    <span class="comment">//小数点后是数字0，被当作整数3</span></span><br><span class="line"><span class="keyword">let</span> floatNum3 = <span class="number">1.4</span>;    <span class="comment">//浮点数1.4</span></span><br></pre></td></tr></table></figure>
+<p>除了常规的数字，还有特殊的数值也属于Number类型。</p>
+<ul>
+<li><code>Infinity</code> 代表无穷大，可以用数字除以0获得它。</li>
+<li><code>NaN</code> 代表一个计算错误，是Not a Number的缩写，对<code>NaN</code>的进一步数字运算都只会返回<code>NaN</code>。</li>
+</ul>
+<h4 id="BigInt"><a href="#BigInt" class="headerlink" title="BigInt"></a>BigInt</h4><p>BigInt类型是最近被添加到JavaScript中的，用于表示任意长度的整数。<br>通过在整数字段的末尾添加<code>n</code>来创建一个BigInt值。</p>
+<h4 id="Boolean"><a href="#Boolean" class="headerlink" title="Boolean"></a>Boolean</h4><p>Boolean类型只包含两个值<code>true</code>和<code>false</code>。<br><code>true</code>代表真值，<code>false</code>代表假值。</p>
+<h4 id="Undefined"><a href="#Undefined" class="headerlink" title="Undefined"></a>Undefined</h4><p>Undefined类型的只有一个值，即特殊值<code>undefined</code>，其含义是“未被赋值”。<br>一个变量如果已经声明，但是没有被赋值，则它会被默认赋予<code>undefine</code>值。<br>永远不要显式赋值<code>undefined</code>，并且建议在声明变量的同时初始化变量。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> message;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(message);    <span class="comment">//undefined</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Null"><a href="#Null" class="headerlink" title="Null"></a>Null</h4><p>Null类型同样也只有一个值，即特殊值<code>null</code>。<br>逻辑上讲，<code>null</code>值表示一个空对象指针，因此<code>typeof()</code>会返回<code>object</code>。<br>与不要显式赋值<code>undefined</code>不同，在定义将来要保存对象值的变量时间，建议用<code>null</code>来初始化。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> students = <span class="literal">null</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="keyword">typeof</span> students);    <span class="comment">//object</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(students != <span class="literal">null</span>);    <span class="comment">//false,判断对象是否为空</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Symbol与Object"><a href="#Symbol与Object" class="headerlink" title="Symbol与Object"></a>Symbol与Object</h4><p>Symbol类型也是最近被添加到JavaScript中的，它是一个原始类型。<br>Symbol类型用于创建对象的唯一标识符，确保对象不会发生属性冲突的危险。<br>Object类型代表了一组数据和功能的集合。</p>
+<h3 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h3><p>这部分的内容主要参考W3School的<a herf="https://www.w3school.com.cn/js/pro_js_operators_unary.asp">ECMAScript运算符</a><br>运算元：运算符操作的对象，也称为参数。<br>如果一个运算符对应一个操作对象，则称为<strong>一元运算符</strong>。如果它对应两个操作对象，则称为<strong>二元运算符</strong>。</p>
+<ul>
+<li>一元运算符：自增<code>++</code>、自减<code>--</code>、一元加减<code>+/-</code></li>
+<li>位运算符：按位非<code>~</code>、按位与<code>&amp;</code>、按位或<code>|</code>、按位异或<code>^</code></li>
+<li>逻辑运算符：逻辑非<code>!</code>、逻辑与<code>&amp;&amp;</code>、逻辑或<code>||</code></li>
+<li>乘性运算符：乘法<code>*</code>、除法<code>/</code>、取余<code>%</code></li>
+<li>加性运算符：加法<code>+</code>、减法<code>-</code></li>
+<li>关系运算符：小于<code>&lt;</code>、大于<code>&gt;</code></li>
+<li>等性运算符：等号<code>==</code>、非等号<code>!=</code>、全等号<code>===</code>、非全等号<code>!==</code></li>
+<li>条件运算符：<code>variable = boolean_expression ? true_value : false_value;</code></li>
+<li>赋值运算符：<code>=</code></li>
+<li>逗号运算符：<code>,</code></li>
+</ul>
+<p>优先级：运算符优先级参见<a herf="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence">优先级表</a>，一般一元运算符优先级高于二元运算符。</p>
+<h3 id="语句"><a href="#语句" class="headerlink" title="语句"></a>语句</h3><h4 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h4><p><img src="/blogs-image/my-gitpage/flow.png" alt="流程图"></p>
+<h4 id="if语句"><a href="#if语句" class="headerlink" title="if语句"></a>if语句</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(condition1) &#123;</span><br><span class="line">  statement1;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span> <span class="keyword">if</span>(condition2) &#123;</span><br><span class="line">  statement2;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span> &#123;</span><br><span class="line">  statement3</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//即使只有一行代码，最佳实践仍然建议使用语句块</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="while语句"><a href="#while语句" class="headerlink" title="while语句"></a>while语句</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//先检测退出条件，再执行循环体</span></span><br><span class="line"><span class="keyword">while</span>(expression) &#123;</span><br><span class="line">  statement;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//先至少执行一次循环体，再检测退出条件</span></span><br><span class="line"><span class="keyword">do</span> &#123;</span><br><span class="line">  statement;</span><br><span class="line">&#125; <span class="keyword">while</span>(expression);</span><br></pre></td></tr></table></figure>
+
+<h4 id="for语句"><a href="#for语句" class="headerlink" title="for语句"></a>for语句</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//初始值。条件表达式，循环体，循环后表达式</span></span><br><span class="line"><span class="keyword">for</span>(initialization; expression; post-loop-expression) &#123;</span><br><span class="line">  statement;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//严格迭代语句，用于枚举对象中非符号键属性</span></span><br><span class="line"><span class="keyword">for</span>(property <span class="keyword">in</span> expression) &#123;</span><br><span class="line">  statement;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//严格迭代语句，用于遍历可迭代对象的元素</span></span><br><span class="line"><span class="keyword">for</span>(property <span class="keyword">of</span> expression) &#123;</span><br><span class="line">  statement;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="switch语句"><a href="#switch语句" class="headerlink" title="switch语句"></a>switch语句</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//expression与value进行判断时是全等</span></span><br><span class="line"><span class="keyword">switch</span>(expression) &#123;</span><br><span class="line">  <span class="keyword">case</span> <span class="attr">value1</span>:</span><br><span class="line">    statement1;</span><br><span class="line">    <span class="keyword">break</span>;</span><br><span class="line">  <span class="keyword">case</span> <span class="attr">value2</span>:</span><br><span class="line">    statement2;</span><br><span class="line">    <span class="keyword">break</span>;</span><br><span class="line">  <span class="attr">default</span>:</span><br><span class="line">    statement3;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">label1</span>:    <span class="comment">//label用于给语句加标签，应用场景为嵌套循环,label可以是任何不为保留字的标识符</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> i = <span class="number">1</span>; i &lt; <span class="number">4</span>; i++) &#123;</span><br><span class="line">  <span class="attr">label2</span>:</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">let</span> j = <span class="number">2</span>; j &gt; <span class="number">0</span>; j--)&#123;</span><br><span class="line">    <span class="keyword">if</span>(i == <span class="number">2</span> &amp;&amp; j == <span class="number">1</span>) &#123;</span><br><span class="line">      <span class="keyword">continue</span> label1;    <span class="comment">//继续执行外部循环</span></span><br><span class="line">      <span class="comment">//如果使用break，则可以同时退出内部循环与外部循环</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">`i = <span class="subst">$&#123;i&#125;</span>, j = <span class="subst">$&#123;j&#125;</span>`</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><h3 id="函数基础"><a href="#函数基础" class="headerlink" title="函数基础"></a>函数基础</h3><p>函数是程序的主要”构建模块”，用于该段代码需要多次调用的时候。</p>
+<h4 id="声明与命名"><a href="#声明与命名" class="headerlink" title="声明与命名"></a>声明与命名</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//函数声明</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">showMessage</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="title function_">alert</span>(<span class="string">&quot;Hello World!&quot;</span>);  <span class="comment">//函数体</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="title function_">showMessage</span>(); <span class="comment">//通过函数名调用函数</span></span><br></pre></td></tr></table></figure>
+<p>函数的封装：将一个或多个功能通过<strong>函数的方式封装</strong>起来，对外只提供一个简单的函数接口。<br>函数命名：函数是行为，因此命名尽可能用动词前缀来进行。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">showMessage</span>(...)   <span class="comment">//显示信息(show...显示一个值)</span></span><br><span class="line"><span class="title function_">getAge</span>(...)  <span class="comment">//返回age(get...返回一个值)</span></span><br><span class="line"><span class="title function_">calcSum</span>(...) <span class="comment">//计算求和并返回(calc...计算某些内容)</span></span><br><span class="line"><span class="title function_">createForm</span>(...) <span class="comment">//创建表单(create...创建某些内容)</span></span><br><span class="line"><span class="title function_">checkPermission</span>(...)  <span class="comment">//检查权限并返回布尔值(check...检查某些内容并返回布尔值)</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="变量与参数"><a href="#变量与参数" class="headerlink" title="变量与参数"></a>变量与参数</h4><ul>
+<li>局部变量：在函数中声明，只在该函数内部可见。<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">showMessage</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">let</span> message = <span class="string">&quot;Hello World !&quot;</span>; <span class="comment">//局部变量</span></span><br><span class="line">  <span class="title function_">alert</span>(message);</span><br><span class="line">&#125;</span><br><span class="line"><span class="title function_">alert</span>(message); <span class="comment">//出错，变量为函数的局部变量</span></span><br></pre></td></tr></table></figure></li>
+<li>外部变量：函数对外部变量拥有全部的访问权限，也可以对外部变量进行修改。<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> username = <span class="string">&#x27;John&#x27;</span>;</span><br><span class="line"><span class="keyword">function</span> <span class="title function_">newName</span>(<span class="params"></span>) &#123;</span><br><span class="line">  username = <span class="string">&#x27;Bob&#x27;</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="title function_">alert</span>(username) <span class="comment">//John，在函数调用之前</span></span><br><span class="line"><span class="title function_">newName</span>();</span><br><span class="line"><span class="title function_">alert</span>(username) <span class="comment">//Bob，在函数调用之后</span></span><br></pre></td></tr></table></figure></li>
+<li>如果函数内部声明了同名变量，则函数会<strong>遮蔽</strong>外部变量，优先使用内部变量。</li>
+</ul>
+<h4 id="参数与默认值"><a href="#参数与默认值" class="headerlink" title="参数与默认值"></a>参数与默认值</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">showMessage</span>(<span class="params"><span class="keyword">from</span>, text</span>) &#123; <span class="comment">//参数form和text</span></span><br><span class="line">  <span class="title function_">alert</span>(form + <span class="string">&#x27;: &#x27;</span> +text);</span><br><span class="line">&#125;</span><br><span class="line"><span class="title function_">showMessage</span>(<span class="string">&#x27;Ann&#x27;</span>, <span class="string">&#x27;Hello!&#x27;</span>); <span class="comment">//Ann: Hello!</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>函数调用时，实参(argument)’Ann’与’Hello!’被复制到了局部变量形参(parameter)from与text。</li>
+<li>声明函数时，列出它们的参数(parameters);调用函数时用它们传递参数(arguments)。</li>
+<li>如果函数被调用，但是参数(argument)未被提供，那么相应的值会变成undefined。</li>
+</ul>
+<h4 id="返回值"><a href="#返回值" class="headerlink" title="返回值"></a>返回值</h4>   <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">sum</span>(<span class="params">a, b</span>) &#123;</span><br><span class="line">   <span class="keyword">return</span> a + b;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>函数可以将一个值返回到调用代码中作为结果。</li>
+<li>指令return可以在函数中任意位置，当执行到达时，函数停止。一个函数中可以有多个return。</li>
+<li>return可以没有返回值，但是会导致函数立即退出。</li>
+</ul>
+<h3 id="函数表达式"><a href="#函数表达式" class="headerlink" title="函数表达式"></a>函数表达式</h3><p>在JavaScript中，函数是<strong>一种特殊的值</strong>。<br>函数的创建有两种方式，一种是<strong>函数声明</strong>，另一种为<strong>函数表达式</strong>。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">sayHi</span>(<span class="params"></span>) &#123;</span><br><span class="line">   <span class="title function_">alert</span>( <span class="string">&#x27;Hi!&#x27;</span> );</span><br><span class="line">&#125;  <span class="comment">//利用函数声明创建函数</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> sayHi = <span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">   <span class="title function_">alert</span>( <span class="string">&#x27;Hi!&#x27;</span> );</span><br><span class="line">&#125;; <span class="comment">//利用函数表达式创建函数-</span></span><br></pre></td></tr></table></figure>
+<p>因为函数是一种特殊的值，所以可以像使用其他的值一样使用它。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">sayHi</span>(<span class="params"></span>) &#123;</span><br><span class="line">   <span class="title function_">alert</span>( <span class="string">&#x27;Hi!&#x27;</span> );</span><br><span class="line">&#125;  <span class="comment">//创建函数，并将它放入变量sayHi中</span></span><br><span class="line"><span class="keyword">let</span> func = sayHi; <span class="comment">//将sayHi复制到了func中，注意sayHi后面没有括号</span></span><br><span class="line"><span class="title function_">func</span>();  <span class="comment">//Hi</span></span><br><span class="line"><span class="title function_">sayHi</span>(); <span class="comment">//Hi</span></span><br></pre></td></tr></table></figure>
+<p>回调函数：将函数作为值来传递</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">ask</span>(<span class="params">question, yes, no</span>) &#123;</span><br><span class="line">   <span class="keyword">if</span>(<span class="title function_">confirm</span>(question)) <span class="title function_">yes</span>();</span><br><span class="line">   <span class="keyword">else</span> <span class="title function_">no</span>();</span><br><span class="line">&#125;  <span class="comment">//question,关于问题的文本</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">showOk</span>(<span class="params"></span>) &#123;</span><br><span class="line">   <span class="title function_">alert</span>( <span class="string">&quot;You agreed.&quot;</span> );</span><br><span class="line">&#125;  <span class="comment">//当回答为yes时运行的脚本</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">showCancel</span>(<span class="params"></span>) &#123;</span><br><span class="line">   <span class="title function_">alert</span>( <span class="string">&quot;You canceled the execution.&quot;</span> )</span><br><span class="line">&#125;  <span class="comment">//当回答为no时运行的脚本</span></span><br><span class="line"><span class="comment">//用法：函数showOk和showCancel被作为参数传入到ask中</span></span><br><span class="line"><span class="title function_">ask</span>(<span class="string">&quot;Do you agree?&quot;</span>, showOk, showCancel);</span><br><span class="line">----</span><br><span class="line"><span class="comment">//函数表达式法缩写</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">ask</span>(<span class="params">question, yes, no</span>) &#123;</span><br><span class="line">   <span class="keyword">if</span>(<span class="title function_">confirm</span>(question)) <span class="title function_">yes</span>()</span><br><span class="line">   <span class="keyword">else</span> <span class="title function_">no</span>();</span><br><span class="line">&#125;</span><br><span class="line"><span class="title function_">ask</span>(</span><br><span class="line">   <span class="string">&quot;Do you agree&quot;</span>,</span><br><span class="line">   <span class="keyword">function</span>(<span class="params"></span>) &#123;<span class="title function_">alert</span>( <span class="string">&quot;You agreed.&quot;</span> );&#125;,</span><br><span class="line">   <span class="keyword">function</span>(<span class="params"></span>) &#123;<span class="title function_">alert</span>( <span class="string">&quot;You canceled the execution.&quot;</span> );&#125;</span><br><span class="line">); <span class="comment">//在ask内直接通过匿名函数进行函数声明</span></span><br></pre></td></tr></table></figure>
+<p>函数声明与函数表达式的区别</p>
+<ul>
+<li>js引擎运行js代码时先预解析，然后再进行代码执行。<ol>
+<li>预解析时，变量和函数声明会被提升到当前作用域的最前面，但赋值和调用并不进行。</li>
+<li>代码执行时，按照书写顺序从上往下执行。</li>
+</ol>
+</li>
+<li>因此，函数声明在被定义之前就可以被调用，而函数表达式只能在代码执行到达时被创建，并且仅从那一刻起可用。</li>
+</ul>
+<h3 id="箭头函数"><a href="#箭头函数" class="headerlink" title="箭头函数"></a>箭头函数</h3><p>ECMAScript6新增加了<code>=&gt;</code>语法定义函数表达式的能力。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="title function_">func</span> = (<span class="params">arg1, arg2, ..., argN</span>) =&gt; expression;</span><br><span class="line"><span class="comment">//创建函数，接受参数arg1~argN，使用右边的expression求值并返回结果</span></span><br><span class="line"><span class="comment">//等同于如下代码</span></span><br><span class="line"><span class="keyword">let</span> func = <span class="keyword">function</span>(<span class="params">agr1, arg2, ..., argN</span>) &#123;</span><br><span class="line">   <span class="keyword">return</span> expression;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">//如果没有参数，括号将是空的，但是应该保留</span></span><br><span class="line"><span class="keyword">let</span> <span class="title function_">sayHi</span> = (<span class="params"></span>) =&gt; <span class="title function_">alert</span>( <span class="string">&quot;Hi!&quot;</span> );</span><br><span class="line"><span class="title function_">sayHi</span>();</span><br><span class="line"><span class="comment">//多行的箭头函数</span></span><br><span class="line"><span class="keyword">let</span> <span class="title function_">sum</span> = (<span class="params">a, b</span>) =&gt; &#123;</span><br><span class="line">   <span class="keyword">let</span> result = a + b;</span><br><span class="line">   <span class="keyword">return</span> result;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="title function_">alert</span>(<span class="title function_">sum</span>(<span class="number">1</span>, <span class="number">2</span>));</span><br></pre></td></tr></table></figure>
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title="0" data-url="http://link.hhtjim.com/163/425570952.mp3"></li>
+                        
+                    
+                        
+                            <li title="1" data-url="http://link.hhtjim.com/163/425570952.mp3"></li>
+                        
+                    
+                </ul>
+            
+        </div>
+        
+    <div id="gitalk-container" class="comment link"
+		data-enable="false"
+        data-ae="false"
+        data-ci=""
+        data-cs=""
+        data-r=""
+        data-o=""
+        data-a=""
+        data-d="false"
+    >查看评论</div>
+
+
+    </div>
+    
+        <div class="side">
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFJavaScript"><span class="toc-number">1.</span> <span class="toc-text">什么是JavaScript</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8E%86%E5%8F%B2%E5%9B%9E%E9%A1%BE"><span class="toc-number">1.1.</span> <span class="toc-text">历史回顾</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JavaScript%E7%9A%84%E5%AE%9E%E7%8E%B0"><span class="toc-number">1.2.</span> <span class="toc-text">JavaScript的实现</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hello-World"><span class="toc-number">2.</span> <span class="toc-text">Hello, World!</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#script%E6%A0%87%E7%AD%BE"><span class="toc-number">2.1.</span> <span class="toc-text">script标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E4%BA%A4%E4%BA%92"><span class="toc-number">2.2.</span> <span class="toc-text">常用交互</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80"><span class="toc-number">3.</span> <span class="toc-text">语言基础</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%AD%E6%B3%95"><span class="toc-number">3.1.</span> <span class="toc-text">语法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%98%E9%87%8F"><span class="toc-number">3.2.</span> <span class="toc-text">变量</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#var"><span class="toc-number">3.2.1.</span> <span class="toc-text">var</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#lef"><span class="toc-number">3.2.2.</span> <span class="toc-text">lef</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#const"><span class="toc-number">3.2.3.</span> <span class="toc-text">const</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-number">3.3.</span> <span class="toc-text">数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#String"><span class="toc-number">3.3.1.</span> <span class="toc-text">String</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Number"><span class="toc-number">3.3.2.</span> <span class="toc-text">Number</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#BigInt"><span class="toc-number">3.3.3.</span> <span class="toc-text">BigInt</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Boolean"><span class="toc-number">3.3.4.</span> <span class="toc-text">Boolean</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Undefined"><span class="toc-number">3.3.5.</span> <span class="toc-text">Undefined</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Null"><span class="toc-number">3.3.6.</span> <span class="toc-text">Null</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Symbol%E4%B8%8EObject"><span class="toc-number">3.3.7.</span> <span class="toc-text">Symbol与Object</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">3.4.</span> <span class="toc-text">运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%AD%E5%8F%A5"><span class="toc-number">3.5.</span> <span class="toc-text">语句</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B5%81%E7%A8%8B%E5%9B%BE"><span class="toc-number">3.5.1.</span> <span class="toc-text">流程图</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#if%E8%AF%AD%E5%8F%A5"><span class="toc-number">3.5.2.</span> <span class="toc-text">if语句</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#while%E8%AF%AD%E5%8F%A5"><span class="toc-number">3.5.3.</span> <span class="toc-text">while语句</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#for%E8%AF%AD%E5%8F%A5"><span class="toc-number">3.5.4.</span> <span class="toc-text">for语句</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#switch%E8%AF%AD%E5%8F%A5"><span class="toc-number">3.5.5.</span> <span class="toc-text">switch语句</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B6%E4%BB%96"><span class="toc-number">3.5.6.</span> <span class="toc-text">其他</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%BD%E6%95%B0"><span class="toc-number">4.</span> <span class="toc-text">函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E5%9F%BA%E7%A1%80"><span class="toc-number">4.1.</span> <span class="toc-text">函数基础</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A3%B0%E6%98%8E%E4%B8%8E%E5%91%BD%E5%90%8D"><span class="toc-number">4.1.1.</span> <span class="toc-text">声明与命名</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%98%E9%87%8F%E4%B8%8E%E5%8F%82%E6%95%B0"><span class="toc-number">4.1.2.</span> <span class="toc-text">变量与参数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%82%E6%95%B0%E4%B8%8E%E9%BB%98%E8%AE%A4%E5%80%BC"><span class="toc-number">4.1.3.</span> <span class="toc-text">参数与默认值</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%94%E5%9B%9E%E5%80%BC"><span class="toc-number">4.1.4.</span> <span class="toc-text">返回值</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="toc-number">4.2.</span> <span class="toc-text">函数表达式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0"><span class="toc-number">4.3.</span> <span class="toc-text">箭头函数</span></a></li></ol></li></ol>	
+        </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>
