@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>OMV+Jellyfin打造个人影视库 - 乌弥的小屋</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Umi&#39;s Home,"> 
+    <meta name="description" content="从到蜗牛星际到自组nas的小总结。
+关于nasNAS，全称Network Attached Storage，翻译过来即为网络附属存储。简单来讲的话可以把它当作一个私人云盘来使用。NAS被定义为是一个,"> 
+    <meta name="author" content="Umi"> 
+    <link rel="alternative" href="atom.xml" title="乌弥的小屋" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+    
+    
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="OMV+Jellyfin打造个人影视库 - 乌弥的小屋"/>
+    <meta name="twitter:description" content="从到蜗牛星际到自组nas的小总结。
+关于nasNAS，全称Network Attached Storage，翻译过来即为网络附属存储。简单来讲的话可以把它当作一个私人云盘来使用。NAS被定义为是一个,"/>
+    
+    
+    
+    
+    <meta property="og:site_name" content="乌弥的小屋"/>
+    <meta property="og:type" content="object"/>
+    <meta property="og:title" content="OMV+Jellyfin打造个人影视库 - 乌弥的小屋"/>
+    <meta property="og:description" content="从到蜗牛星际到自组nas的小总结。
+关于nasNAS，全称Network Attached Storage，翻译过来即为网络附属存储。简单来讲的话可以把它当作一个私人云盘来使用。NAS被定义为是一个,"/>
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+    <script>window.searchDbPath = "/search.xml";</script>
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">乌弥的小屋</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="https://umitsurumi.github.io"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">OMV+Jellyfin打造个人影视库</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">OMV+Jellyfin打造个人影视库</h1>
+        <div class="stuff">
+            <span>十月 10, 2022</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/jellyfin/" rel="tag">jellyfin</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/omv/" rel="tag">omv</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <p>从到蜗牛星际到自组nas的小总结。</p>
+<h2 id="关于nas"><a href="#关于nas" class="headerlink" title="关于nas"></a>关于nas</h2><p>NAS，全称Network Attached Storage，翻译过来即为网络附属存储。简单来讲的话可以把它当作一个私人云盘来使用。<br>NAS被定义为是一个以数据存储为中心的服务器，它首先具有数据集中存储和集中管理的功能，在这之上，它也可以做为一个私人专属的小服务器使用，实现诸如下载播放、家庭影院、软路由、虚拟机等功能。</p>
+<h3 id="为什么要入手nas"><a href="#为什么要入手nas" class="headerlink" title="为什么要入手nas"></a>为什么要入手nas</h3><p><del>当然是吃饱了没事干瞎折腾。</del><br>虽然但是每个人对nas的理解和需求都不一样，对我个人来讲主要是更换了笔记本电脑后释放存储空间的需要和考虑搭建个人影视库的方便，另外则是对于网盘的不信任（<i>谁知道存在网盘里面的内容哪天就会打不开了呢？而百度的下载限速……emmm</i>）。<br>对于爱折腾的人来说，折腾nas的这个过程本身也可以是很有趣的，尤其是花费时间和精力后，实现了自己想要的功能后的满足感。</p>
+<h3 id="成品机-or-DIY？"><a href="#成品机-or-DIY？" class="headerlink" title="成品机 or DIY？"></a>成品机 or DIY？</h3><h4 id="成品nas"><a href="#成品nas" class="headerlink" title="成品nas"></a>成品nas</h4><p>家用nas目前市面上其实已经有很多成熟的产品供人选择，且不说大家耳熟能详的群晖和威联通，新的产品还有万由云、极空间、绿联云等等，像是海康、联想、华为等厂商也推出了私人云产品。<br>成熟的nas产品，不仅是简单方便开箱即用，而且它们的功能和app适配也相对完善，售后服务等更是进一步提升了保障，省心省力。<br>当然，成品nas的缺点也很明显：一个是价格稍贵，另一个就是硬件上没有太多选择。像是<a target="_blank" rel="noopener" href="https://item.jd.com/100015087431.html#product-detail">群晖最入门的双盘位DS220j</a>，京东目前售价在1400元，<a target="_blank" rel="noopener" href="https://item.jd.com/100014187286.html#product-detail">支持Docker的DS220+</a>则翻了一倍的价格，近2800元，而它的配置仅仅才是J4025+2GB DDR4，也难怪大家常说成品nas是“买软件送硬件”。</p>
+<h4 id="DIY"><a href="#DIY" class="headerlink" title="DIY"></a>DIY</h4><p>DIY相对成品nas来说，在经济上有不小的优势。nas本身也就是一台专门用于数据存储的电脑，一般家用电脑的配置也完全可以满足nas的要求，如果不介意使用二手硬件，去海鲜市场淘一下还能把硬件上的成本进一步降低。而且，基于不同的使用场景和不同的预算水平，DIY的配置完全可以按需购入，而不是在nas厂家提供的选项中进行选择。<br>系统方面，DIY除了使用破解版群晖系统——也就是黑群晖外，较为常见的可供选择的开源系统有<a herf="https://www.truenas.com/">TrueNas</a>和<a herf="https://www.openmediavault.org/">OpenMediaVault</a>，还有最近较为火热的<a herf="https://unraid.net/zh">UNRAID</a>。如果习惯windows系统，可以考虑windows server或者直接windows宿主机+虚拟机nas系统的方法。<br>显然，DIY就是个费时费力的活。不仅需要时间精力的投入，还需要DIY玩家有一定的技术水平。另外，在nas的DIY过程中或是日后的使用中，遇见的问题也只能依靠自己。</p>
+<p>因此，如果只是需要一台基本功能的nas，又不想太麻烦，同时经济上也相对较宽裕的，可以直接购买入门级的成品nas。如果就是想折腾，用二手硬件甚至虚拟机先尝试一下DIY的nas系统也未尝不可。</p>
+<h3 id="个人方案"><a href="#个人方案" class="headerlink" title="个人方案"></a>个人方案</h3><p>成品nas的性价比确实不太美丽，DIY的系统在尝试过TrueNas和OMV之后最终选择了后者。<br>硬件上，因为一开始的目的是希望搭建个人影视库，所以在尝试了J1900的矿渣蜗牛后，升级成了G6900+h610i+8G DDR4。主板上有4个SATA3和1个M.2，在机箱空间足够的情况下可以放下4块HDD和1个SSD，并且可以通过预留给显卡的PCIe转接进一步扩展。系统盘则是做在了32G的U盘里面，这样能从主板上解放一个固态位。</p>
+<h2 id="系统安装与设置"><a href="#系统安装与设置" class="headerlink" title="系统安装与设置"></a>系统安装与设置</h2><p>omv，全称为openmediavault，是基于Linux内核的Debian构建的nas系统。omv在安装上并没有太多困难的，但是因为它是系统与数据相分离的结构——即系统要安装在独立的硬盘上，而我又不太想浪费一个M.2硬盘位来装一个8G都不到的系统，所以选择了用U盘安装。</p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title="0" data-url="http://link.hhtjim.com/163/425570952.mp3"></li>
+                        
+                    
+                        
+                            <li title="1" data-url="http://link.hhtjim.com/163/425570952.mp3"></li>
+                        
+                    
+                </ul>
+            
+        </div>
+        
+    <div id="gitalk-container" class="comment link"
+		data-enable="false"
+        data-ae="false"
+        data-ci=""
+        data-cs=""
+        data-r=""
+        data-o=""
+        data-a=""
+        data-d="false"
+    >查看评论</div>
+
+
+    </div>
+    
+        <div class="side">
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8Enas"><span class="toc-number">1.</span> <span class="toc-text">关于nas</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%85%A5%E6%89%8Bnas"><span class="toc-number">1.1.</span> <span class="toc-text">为什么要入手nas</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%88%90%E5%93%81%E6%9C%BA-or-DIY%EF%BC%9F"><span class="toc-number">1.2.</span> <span class="toc-text">成品机 or DIY？</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%88%90%E5%93%81nas"><span class="toc-number">1.2.1.</span> <span class="toc-text">成品nas</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#DIY"><span class="toc-number">1.2.2.</span> <span class="toc-text">DIY</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%AA%E4%BA%BA%E6%96%B9%E6%A1%88"><span class="toc-number">1.3.</span> <span class="toc-text">个人方案</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E4%B8%8E%E8%AE%BE%E7%BD%AE"><span class="toc-number">2.</span> <span class="toc-text">系统安装与设置</span></a></li></ol>	
+        </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>

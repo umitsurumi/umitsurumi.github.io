@@ -270,7 +270,7 @@ h1.title {font-size:30px;color:#333;line-height:1.3;position:relative;font-weigh
 .content .video-container {position:relative;padding-bottom:56.25%;padding-top:25px;height:0;}
 .content .video-container iframe {position:absolute;top:0;left:0;width:100%;height:100%;}
 pre .comment,pre .title {color:#999;}
-pre .variable,pre .attribute,pre .tag,pre .regexp,pre .ruby .constant,pre .xml .tag,pre .title,pre .xml .pi,pre .xml .doctype,pre .html .doctype,pre .css .id,pre .css .class,pre .css .pseudo {color:#f2777a;}
+pre .variable,pre .attribute,pre .tag,pre .regexp,pre .ruby .constant,pre .xml .tag,pre .title,pre .xml .pi,pre .xml .doctype,pre .html .doctype,pre .css .id,pre .css .class,pre .css .pseudo {color:#5fc3da;}
 pre .number,pre .preprocessor,pre .built_in,pre .literal,pre .params,pre .constant {color:#f99157;}
 pre .class,pre .ruby .class .title,pre .css .rules .attribute {color:#99cc99;}
 pre .string,pre .value,pre .inheritance,pre .header,pre .ruby .symbol,pre .xml .cdata {color:#99cc99;}
