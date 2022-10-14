@@ -76,7 +76,7 @@ githubpage建站主要参看github的官方文档。
         </div>
         <div class="content markdown">
             <p>利用Hexo和gitpage搭建blog小站的笔记记录，算是把整个（不太复杂的）过程做个小总结。</p>
-<h2 id="githubpage建站"><a href="#githubpage建站" class="headerlink" title="githubpage建站"></a>githubpage建站</h2><p>主要参看<a herf="https://docs.github.com/cn/pages/quickstart">github的官方文档</a>。</p>
+<h2 id="githubpage建站"><a href="#githubpage建站" class="headerlink" title="githubpage建站"></a>githubpage建站</h2><p>主要参看<a target="_blank" rel="noopener" href="https://docs.github.com/cn/pages/quickstart">github的官方文档</a>。</p>
 <h3 id="创建站点"><a href="#创建站点" class="headerlink" title="创建站点"></a>创建站点</h3><ol>
 <li>在github网站任何页面的右上角，使用<code>+</code>下拉菜单选择里面的<code>New  repository</code>新建仓库。</li>
 <li>输入<code>username.github.io</code>作为仓库名。<br>实际上不用<code>username</code>也可以，但是在后续设置的时候会有需要注意的地方。<br><img src="/blogs-image/my-gitpage/create-page-1.png" alt="gitpage说明图"></li>
@@ -85,11 +85,11 @@ githubpage建站主要参看github的官方文档。
 <li>访问<code>username.github.io</code>就可以看见刚才创建的站点了。<br><img src="/blogs-image/my-gitpage/create-page-3.png" alt="gitpage建站说明图"></li>
 </ol>
 <h2 id="使用Hexo"><a href="#使用Hexo" class="headerlink" title="使用Hexo"></a>使用Hexo</h2><p>使用gitpage创建站点还是很简单的，之后就是站点的主题美化和内容创作了。在比较了<code>Jeklly</code>和<code>Hexo</code>后，我选择了<code>Hexo</code>作为工具。</p>
-<h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p>这部分内容主要参考<a herf="https://hexo.io/zh-cn/docs/">Hexo中文文档</a><br>Hexo是一个快速、简洁且高效的博客框架，利用Markdown解析文章，生成静态网页。</p>
+<h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p>这部分内容主要参考<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">Hexo中文文档</a><br>Hexo是一个快速、简洁且高效的博客框架，利用Markdown解析文章，生成静态网页。</p>
 <h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><ol>
 <li>安装前提<ul>
-<li><a herf="https://nodejs.org/en/">Node.js</a></li>
-<li><a herf="http://git-scm.com/">Git</a></li>
+<li><a target="_blank" rel="noopener" href="https://nodejs.org/en/">Node.js</a></li>
+<li><a target="_blank" rel="noopener" href="http://git-scm.com/">Git</a></li>
 </ul>
 </li>
 <li>安装Hexo<br>安装完成Node.js和Git，使用npm安装Hexo。<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure></li>
@@ -108,7 +108,7 @@ githubpage建站主要参看github的官方文档。
 <p>然后通过以下三条命令完成部署：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
 <p>之后通过之前的gitpage域名<code>username.github.io</code>就可以对部署好的博客网页进行访问了。</p>
-<h3 id="使用主题"><a href="#使用主题" class="headerlink" title="使用主题"></a>使用主题</h3><p>Hexo的主题可以参看<a herf="https://hexo.io/themes/">官网</a>提供的模板,也可以从GitHub仓库中查找。当然也可以自行创作。<br>以<code>https://github.com/wayou/hexo-theme-gstyle</code>主题为例：</p>
+<h3 id="使用主题"><a href="#使用主题" class="headerlink" title="使用主题"></a>使用主题</h3><p>Hexo的主题可以参看<a target="_blank" rel="noopener" href="https://hexo.io/themes/">官网</a>提供的模板,也可以从GitHub仓库中查找。当然也可以自行创作。<br>以<code>https://github.com/wayou/hexo-theme-gstyle</code>主题为例：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//在博客文件夹下克隆仓库到本地</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/wayou/hexo-theme-gstyle.git themes/gstyle</span><br><span class="line">//在配置文件_config.yml的theme中修改</span><br><span class="line">$ theme: gstyle</span><br><span class="line">//然后使用发布命令</span><br><span class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
 <h3 id="开始写作"><a href="#开始写作" class="headerlink" title="开始写作"></a>开始写作</h3><p>使用<code>$ hexo new [layout] &lt;title&gt;</code>命令创建一篇新文章或者新页面。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new draft &quot;my-draft&quot;</span><br></pre></td></tr></table></figure>
