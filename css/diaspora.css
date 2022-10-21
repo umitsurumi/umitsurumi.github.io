@@ -303,7 +303,7 @@ pre .function,pre .python .decorator,pre .python .title,pre .ruby .function .tit
 pre .keyword,pre .javascript .function {color:#cc99cc;}
 
 /* Responsive style */
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1400px) {
   #header > div {width:900px;margin:0 auto;}
   #post0 {width:32%;}
   #post0 h2 {font-size:24px;}
