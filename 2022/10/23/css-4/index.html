@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>CSS学习笔记-4 - 乌弥的小屋</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Umi&#39;s Home,"> 
+    <meta name="description" content="初学前端笔记整理，CSS笔记资料主要来源于B站视频公开课和菜鸟教程。
+经典布局方案圣杯 vs 双飞翼圣杯布局与双飞翼布局都是经典的三列布局：左右定宽，中间自适应，同时保证渲染顺序将中间列写在前:
+1,"> 
+    <meta name="author" content="Umi"> 
+    <link rel="alternative" href="atom.xml" title="乌弥的小屋" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+    
+    
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="CSS学习笔记-4 - 乌弥的小屋"/>
+    <meta name="twitter:description" content="初学前端笔记整理，CSS笔记资料主要来源于B站视频公开课和菜鸟教程。
+经典布局方案圣杯 vs 双飞翼圣杯布局与双飞翼布局都是经典的三列布局：左右定宽，中间自适应，同时保证渲染顺序将中间列写在前:
+1,"/>
+    
+    
+    
+    
+    <meta property="og:site_name" content="乌弥的小屋"/>
+    <meta property="og:type" content="object"/>
+    <meta property="og:title" content="CSS学习笔记-4 - 乌弥的小屋"/>
+    <meta property="og:description" content="初学前端笔记整理，CSS笔记资料主要来源于B站视频公开课和菜鸟教程。
+经典布局方案圣杯 vs 双飞翼圣杯布局与双飞翼布局都是经典的三列布局：左右定宽，中间自适应，同时保证渲染顺序将中间列写在前:
+1,"/>
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+    <script>window.searchDbPath = "/search.xml";</script>
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">乌弥的小屋</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="https://umitsurumi.github.io"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">CSS学习笔记-4</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">CSS学习笔记-4</h1>
+        <div class="stuff">
+            <span>十月 23, 2022</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/CSS/" rel="tag">CSS</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <p>初学前端笔记整理，CSS笔记资料主要来源于<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV14J4114768?spm_id_from=333.337.search-card.all.click&vd_source=cd869606ad4453f8dfd6e069cb8e643e">B站视频公开课</a>和<a target="_blank" rel="noopener" href="https://www.runoob.com/html/html-tutorial.html">菜鸟教程</a>。</p>
+<h2 id="经典布局方案"><a href="#经典布局方案" class="headerlink" title="经典布局方案"></a>经典布局方案</h2><h3 id="圣杯-vs-双飞翼"><a href="#圣杯-vs-双飞翼" class="headerlink" title="圣杯 vs 双飞翼"></a>圣杯 vs 双飞翼</h3><p>圣杯布局与双飞翼布局都是经典的三列布局：左右定宽，中间自适应，同时保证渲染顺序将中间列写在前:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.header</span>, <span class="selector-class">.footer</span> &#123;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">height</span>: <span class="number">60px</span>;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">background</span>: grey;</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.main-left</span>, <span class="selector-class">.main-right</span> &#123;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">width</span>: <span class="number">100px</span>;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">height</span>: <span class="number">500px</span>;</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.main-left</span> &#123;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">background</span>: <span class="built_in">rgb</span>(<span class="number">77</span>, <span class="number">77</span>, <span class="number">156</span>);</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.main-right</span> &#123;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">background</span>: <span class="built_in">rgb</span>(<span class="number">132</span>, <span class="number">206</span>, <span class="number">132</span>);</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.main</span> &#123;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">width</span>: <span class="number">100%</span>;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">height</span>: <span class="number">500px</span>;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">background</span>: yellow;</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;header&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;container&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;main&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;main-left&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;main-right&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;footer&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>因为三列均为块元素，添加<code>float</code>同行显示，<code>container</code>清除浮动：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.clear_fix</span> &#123;</span></span><br><span class="line"><span class="language-css">    <span class="comment">/* 清除浮动相关代码 */</span></span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.main</span>, <span class="selector-class">.main-left</span>, <span class="selector-class">.main-right</span> &#123;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">float</span>: left;</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line">...</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;container clear_fix&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;main&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;main-left&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;main-right&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>对左栏和右栏使用负<code>margin</code>拉到<code>main</code>同行：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.main-left</span> &#123;</span><br><span class="line">  <span class="comment">/* 左移到相对于父元素(container)右边最左侧位置 */</span></span><br><span class="line">  <span class="attribute">margin-left</span>: -<span class="number">100%</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.main-right</span> &#123;</span><br><span class="line">  <span class="comment">/* 左移自身宽度 */</span></span><br><span class="line">  <span class="attribute">margin-left</span>: -<span class="number">100px</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>此时已经实现三列布局。但是左栏和右栏移动后，挡住中间栏文字内容，所以需要进一步优化。<br><img src="/blogs-image/css/css-layout-01.png"></p>
+<h4 id="圣杯布局"><a href="#圣杯布局" class="headerlink" title="圣杯布局"></a>圣杯布局</h4><p>圣杯布局中，通过外层<code>margin</code>或<code>padding</code>为左栏和右栏提供摆放空间，同时对中间栏的内容进行限制，防止被遮挡。<br>左栏和右栏通过<code>position:relative</code>相对定位，调整到预留出来的空间上。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="comment">/* 根据左栏和右栏宽度预留空间，也可以使用margin */</span></span><br><span class="line">  <span class="attribute">padding-left</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">padding-right</span>: <span class="number">100px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.main-left</span> &#123;</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">  <span class="attribute">left</span>: -<span class="number">100px</span>;<span class="comment">/* 左移距离为自身宽度 */</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.main-right</span> &#123;</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">  <span class="attribute">right</span>: -<span class="number">100px</span>;<span class="comment">/* 右移距离为自身宽度 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="双飞翼布局"><a href="#双飞翼布局" class="headerlink" title="双飞翼布局"></a>双飞翼布局</h4><p>双飞翼布局在html结构上也进行调整，通过在<code>main</code>内再嵌套一层元素，调整内层元素的内外边距，将内容限制在其中，并给左栏右栏预留出空间。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.main-inner</span> &#123;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">height</span>: <span class="number">100%</span>;</span></span><br><span class="line"><span class="language-css">    <span class="comment">/* 为左栏右栏预留出空间，并将内容限制在盒子内 */</span></span></span><br><span class="line"><span class="language-css">    <span class="attribute">margin-left</span>: <span class="number">100px</span>;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">margin-right</span>: <span class="number">100px</span>;</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line">...</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;container clear_fix&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;main&quot;</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 在main内再进行一层嵌套 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;main-inner&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;main-left&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;main-right&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="flex三栏"><a href="#flex三栏" class="headerlink" title="flex三栏"></a>flex三栏</h3><p>圣杯布局和双飞翼布局解决的都是，保证渲染将中间栏写在前面时，左右定宽，中间自适应的布局。在flex项中，使用<code>order</code>属性就可以实现：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 都快3202年了，求求用下现代的浏览器吧 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.container</span> &#123;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">display</span>:flex;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">height</span>: <span class="number">500px</span>;</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.main</span> &#123;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">order</span>: <span class="number">0</span>;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">flex</span>: <span class="number">1</span> <span class="number">1</span>;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">background</span>: yellow;</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.main-left</span> &#123;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">order</span>: -<span class="number">1</span>;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">flex</span>: <span class="number">0</span> <span class="number">1</span> <span class="number">100px</span>;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">background</span>: <span class="built_in">rgb</span>(<span class="number">77</span>, <span class="number">77</span>, <span class="number">156</span>);</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.main-right</span> &#123;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">order</span>: <span class="number">1</span>;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">flex</span>: <span class="number">0</span> <span class="number">1</span> <span class="number">100px</span>;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">background</span>: <span class="built_in">rgb</span>(<span class="number">132</span>, <span class="number">206</span>, <span class="number">132</span>);</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line">...</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;container&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;main&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;main-left&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;main-right&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<!--### 其他常见布局补充-->
+
+<h2 id="响应式布局"><a href="#响应式布局" class="headerlink" title="响应式布局"></a>响应式布局</h2><p>随着移动互联网的发展，为了适应各种智能设备不同屏幕尺寸和窗口大小，响应式布局应运而生。</p>
+<h3 id="布局比较"><a href="#布局比较" class="headerlink" title="布局比较"></a>布局比较</h3><h4 id="静态布局-Static-Layout"><a href="#静态布局-Static-Layout" class="headerlink" title="静态布局(Static Layout)"></a>静态布局(Static Layout)</h4><p>传统web布局方式，网页上元素以px作为单位。<br>特点：不管浏览器尺寸多少，网页始终按照最初书写的布局来显示，超出部分会在浏览器上显示滚动条。</p>
+<h4 id="流式布局-Liquid-Layout"><a href="#流式布局-Liquid-Layout" class="headerlink" title="流式布局(Liquid Layout)"></a>流式布局(Liquid Layout)</h4><p>网页中主要区域的划分使用百分数，页面元素按屏幕分辨率调节尺寸。<br>特点：页面整体布局结构不变，元素大小会随屏幕大小缩放，元素缩放后可能会出现不协调的情况。</p>
+<h4 id="自适应布局-Adaptive-Layout"><a href="#自适应布局-Adaptive-Layout" class="headerlink" title="自适应布局(Adaptive Layout)"></a>自适应布局(Adaptive Layout)</h4><p>结合媒体查询，为不同尺寸和介质的设备设置不同的样式。<br>特点：创建多个静态布局，分别为不同屏幕分辨率定义布局，屏幕分辨率变换时，元素位置变化而大小不变。</p>
+<h4 id="响应式布局-Responsive-Layout"><a href="#响应式布局-Responsive-Layout" class="headerlink" title="响应式布局(Responsive Layout)"></a>响应式布局(Responsive Layout)</h4><p>目的是为了确保一个页面设计在所有终端(pc+移动端或其他大小的屏幕)都有较好的显示效果。<br>通常的实现方法是流式布局+弹性容器结合媒体查询。<br>特点：在不同的屏幕分辨率下有不同的布局样式，元素大小和位置都会改变。</p>
+<h3 id="设计基础"><a href="#设计基础" class="headerlink" title="设计基础"></a>设计基础</h3><h4 id="viewport"><a href="#viewport" class="headerlink" title="viewport"></a>viewport</h4><p>viewport是用户在网页上的可见区域。HTML5引入了一种方法，可以通过<code>meta</code>标签来控制可视区域：<br><code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</code></p>
+<ul>
+<li><code>width=device-width</code>将页面宽度设置为跟随设备屏幕宽度。</li>
+<li><code>initial-scale=1.0</code>设置首次加载页面时的初始缩放级别。 </li>
+</ul>
+<p>因为通常情况下，移动端浏览器默认为<code>980px</code>的设计宽度。<br>通过引入这段<code>meta</code>标签，取消浏览器的缩放，来启用响应式设计。</p>
+<h4 id="媒体查询"><a href="#媒体查询" class="headerlink" title="媒体查询"></a>媒体查询</h4><p>通过CSS媒体查询，可以为不同的媒体设置不同的规则：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@media</span> <span class="keyword">not</span>|<span class="keyword">only</span> media <span class="keyword">and</span> (feature) &#123;</span><br><span class="line">  css样式...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>对于单独拆分出来的文件，也可以使用<code>link</code>标签：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;specific.css&quot;</span> <span class="attr">media</span>=<span class="string">&quot;type and (feature)&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>媒体查询常搭配<code>min-width</code>和<code>max-width</code>使用：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@media</span> screen <span class="keyword">and</span> (<span class="attribute">max-width</span>: <span class="number">600px</span>) &#123;</span><br><span class="line">  <span class="comment">/* 当屏幕宽度不超过600px时，隐藏侧边导航 */</span></span><br><span class="line">  <span class="selector-class">.side_nav</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: none;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="布局方法"><a href="#布局方法" class="headerlink" title="布局方法"></a>布局方法</h3><h4 id="网格视图"><a href="#网格视图" class="headerlink" title="网格视图"></a>网格视图</h4><p>网格视图(grid-view)将页面分割为几列，通过在网格上来摆放元素。</p>
+<div style="position:relative;">
+  <div style="width:800px;height:400px;background:rgba(210,210,210,0.2);">
+    <div style="float:left;box-sizing:border-box;width:12.5%;height:100%;border-right:1px solid black;"></div>
+    <div style="float:left;box-sizing:border-box;width:12.5%;height:100%;border-right:1px solid black;"></div>
+    <div style="float:left;box-sizing:border-box;width:12.5%;height:100%;border-right:1px solid black;"></div>
+    <div style="float:left;box-sizing:border-box;width:12.5%;height:100%;border-right:1px solid black;"></div>
+    <div style="float:left;box-sizing:border-box;width:12.5%;height:100%;border-right:1px solid black;"></div>
+    <div style="float:left;box-sizing:border-box;width:12.5%;height:100%;border-right:1px solid black;"></div>
+    <div style="float:left;box-sizing:border-box;width:12.5%;height:100%;border-right:1px solid black;"></div>
+    <div style="float:left;box-sizing:border-box;width:12.5%;height:100%;"></div>
+  </div>
+  <div style="position:absolute;top:0;left:0;width:800px;height:400px;background:rgba(0,0,0,0);">
+    <div style="width:100%;height:60px;margin-bottom:20px;background:purple;opacity:0.6"></div>
+    <div style="float:left;width:25%;opacity:0.6;">
+      <div style="width:100%;height:40px;margin-bottom:10px;background:blue;"></div>
+      <div style="width:100%;height:40px;margin-bottom:10px;background:blue;"></div>
+      <div style="width:100%;height:40px;margin-bottom:10px;background:blue;"></div>
+      <div style="width:100%;height:40px;background:blue;"></div>
+    </div>
+    <div style="float:right;width:50%;height:320px;background:yellow;opacity:0.6"></div>
+  </div>
+</div>
+
+<p>再结合媒体查询，对元素进行设置：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 手机等移动端 */</span></span><br><span class="line"><span class="selector-attr">[class*=<span class="string">&quot;col-&quot;</span>]</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 桌面端 */</span></span><br><span class="line"><span class="keyword">@media</span> <span class="keyword">only</span> screen <span class="keyword">and</span> (<span class="attribute">min-width</span>: <span class="number">800px</span>) &#123;</span><br><span class="line">  <span class="selector-class">.col-1</span> &#123; <span class="attribute">width</span>:<span class="number">12.5%</span>; &#125;</span><br><span class="line">  <span class="selector-class">.col-2</span> &#123; <span class="attribute">width</span>:<span class="number">25%</span>; &#125;</span><br><span class="line">  <span class="selector-class">.col-3</span> &#123; <span class="attribute">width</span>:<span class="number">37.5%</span>; &#125;</span><br><span class="line">  <span class="selector-class">.col-4</span> &#123; <span class="attribute">width</span>:<span class="number">50%</span>; &#125;</span><br><span class="line">  <span class="selector-class">.col-5</span> &#123; <span class="attribute">width</span>:<span class="number">62.5%</span>; &#125;</span><br><span class="line">  <span class="selector-class">.col-6</span> &#123; <span class="attribute">width</span>:<span class="number">75%</span>; &#125;</span><br><span class="line">  <span class="selector-class">.col-7</span> &#123; <span class="attribute">width</span>:<span class="number">87.5%</span>; &#125;</span><br><span class="line">  <span class="selector-class">.col-8</span> &#123; <span class="attribute">width</span>:<span class="number">100%</span>; &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>对于较新的浏览器，可以使用<code>flex</code>或者<code>grid</code>布局来实现。</p>
+<h4 id="设备断点"><a href="#设备断点" class="headerlink" title="设备断点"></a>设备断点</h4><p>针对高度宽度不同的设备，可以创建不同的断点来适应：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 超小型设备（电话，600px 及以下） */</span></span><br><span class="line"><span class="keyword">@media</span> <span class="keyword">only</span> screen <span class="keyword">and</span> (<span class="attribute">max-width</span>: <span class="number">600px</span>) &#123;...&#125; </span><br><span class="line"></span><br><span class="line"><span class="comment">/* 小型设备（纵向平板电脑和大型手机，600 像素及以上） */</span></span><br><span class="line"><span class="keyword">@media</span> <span class="keyword">only</span> screen <span class="keyword">and</span> (<span class="attribute">min-width</span>: <span class="number">600px</span>) &#123;...&#125; </span><br><span class="line"></span><br><span class="line"><span class="comment">/* 中型设备（横向平板电脑，768 像素及以上） */</span></span><br><span class="line"><span class="keyword">@media</span> <span class="keyword">only</span> screen <span class="keyword">and</span> (<span class="attribute">min-width</span>: <span class="number">768px</span>) &#123;...&#125; </span><br><span class="line"></span><br><span class="line"><span class="comment">/* 大型设备（笔记本电脑/台式机，992px 及以上） */</span></span><br><span class="line"><span class="keyword">@media</span> <span class="keyword">only</span> screen <span class="keyword">and</span> (<span class="attribute">min-width</span>: <span class="number">992px</span>) &#123;...&#125; </span><br><span class="line"></span><br><span class="line"><span class="comment">/* 超大型设备（大型笔记本电脑和台式机，1200px 及以上） */</span></span><br><span class="line"><span class="keyword">@media</span> <span class="keyword">only</span> screen <span class="keyword">and</span> (<span class="attribute">min-width</span>: <span class="number">1200px</span>) &#123;...&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="响应式图片"><a href="#响应式图片" class="headerlink" title="响应式图片"></a>响应式图片</h3><h4 id="图片大小"><a href="#图片大小" class="headerlink" title="图片大小"></a>图片大小</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 图片将自动放大或者缩小 */</span></span><br><span class="line"><span class="selector-tag">img</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">height</span>: auto;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* 指定max-width，图片永远不会放大到超过原始大小 */</span></span><br><span class="line"><span class="selector-tag">img</span> &#123;</span><br><span class="line">  <span class="attribute">max-width</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">height</span>: auto;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* object-fit可以对图片进行裁剪并保留其原始比例 */</span></span><br><span class="line"><span class="selector-tag">img</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">400px</span>;</span><br><span class="line">  <span class="attribute">object-fit</span>: cover | contain<span class="comment">/* 内容被缩放 */</span> | fill <span class="comment">/* 默认，内容拉伸 */</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* 结合媒体查询，为不同设备指定不同的图片 */</span></span><br><span class="line"><span class="comment">/* 较小的设备 */</span></span><br><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">&#x27;img_small_flower.jpg&#x27;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 对更大的设备 */</span></span><br><span class="line"><span class="keyword">@media</span> <span class="keyword">only</span> screen <span class="keyword">and</span> (<span class="attribute">min-width</span>: <span class="number">400px</span>) &#123;</span><br><span class="line">  <span class="selector-tag">body</span> &#123;</span><br><span class="line">    <span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">&#x27;img_flowers.jpg&#x27;</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="像素密度"><a href="#像素密度" class="headerlink" title="像素密度"></a>像素密度</h4><p>移动端的显示屏往往有多倍像素密度，即多个像素合成一个像素，这使得需要为它们准备额外的图片。<br>根据不同的像素密度适配不同图片在<code>img</code>标签中使用<code>srcset</code>指定：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;small-image.png&quot;</span></span></span><br><span class="line"><span class="tag"><span class="attr">srcset</span>=<span class="string">&quot;small-image.png 1x, medium-image.png 2x, large-image 3x&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><code>1x</code>、<code>2x</code>分别表示了像素密度，<code>small-image.png</code>如果是300 x 200像素，<code>medium-image.png</code>则应该有600 x 400像素。</p>
+<h4 id="图片加载优化"><a href="#图片加载优化" class="headerlink" title="图片加载优化"></a>图片加载优化</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--如果明确图片尺寸，可以在标签中写入属性，能避免内容在图片加载时跳来跳去--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;image.png&quot;</span> <span class="attr">width</span>=<span class="string">&quot;300&quot;</span> <span class="attr">height</span>=<span class="string">&quot;200&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--使用loading属性来指示图片加载的缓急程度--&gt;</span></span><br><span class="line"><span class="comment">&lt;!--指定lazy的图片，浏览器会在用户向下滚动到足以看到图像时才开始加载--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;image.png&quot;</span> <span class="attr">width</span>=<span class="string">&quot;300&quot;</span> <span class="attr">height</span>=<span class="string">&quot;200&quot;</span> <span class="attr">loading</span>=<span class="string">&quot;lazy&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--使用decoding指定图片是否可以异步加载--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;image.png&quot;</span> <span class="attr">width</span>=<span class="string">&quot;300&quot;</span> <span class="attr">height</span>=<span class="string">&quot;200&quot;</span> <span class="attr">loading</span>=<span class="string">&quot;lazy&quot;</span> <span class="attr">decoding</span>=<span class="string">&quot;async&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--如果图片为主要内容，可以将loading和decoding分别指定为eager和sync--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;image.png&quot;</span> <span class="attr">width</span>=<span class="string">&quot;300&quot;</span> <span class="attr">height</span>=<span class="string">&quot;200&quot;</span> <span class="attr">loading</span>=<span class="string">&quot;eager&quot;</span> <span class="attr">decoding</span>=<span class="string">&quot;sync&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<!--### 响应式布局补充
+
+## CSS补充
+### SCSS预处理
+### Bootstrap框架-->
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title="0" data-url="http://link.hhtjim.com/163/425570952.mp3"></li>
+                        
+                    
+                        
+                            <li title="1" data-url="http://link.hhtjim.com/163/425570952.mp3"></li>
+                        
+                    
+                </ul>
+            
+        </div>
+        
+    <div id="gitalk-container" class="comment link"
+		data-enable="false"
+        data-ae="false"
+        data-ci=""
+        data-cs=""
+        data-r=""
+        data-o=""
+        data-a=""
+        data-d="false"
+    >查看评论</div>
+
+
+    </div>
+    
+        <div class="side">
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%8F%E5%85%B8%E5%B8%83%E5%B1%80%E6%96%B9%E6%A1%88"><span class="toc-number">1.</span> <span class="toc-text">经典布局方案</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9C%A3%E6%9D%AF-vs-%E5%8F%8C%E9%A3%9E%E7%BF%BC"><span class="toc-number">1.1.</span> <span class="toc-text">圣杯 vs 双飞翼</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9C%A3%E6%9D%AF%E5%B8%83%E5%B1%80"><span class="toc-number">1.1.1.</span> <span class="toc-text">圣杯布局</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%8C%E9%A3%9E%E7%BF%BC%E5%B8%83%E5%B1%80"><span class="toc-number">1.1.2.</span> <span class="toc-text">双飞翼布局</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#flex%E4%B8%89%E6%A0%8F"><span class="toc-number">1.2.</span> <span class="toc-text">flex三栏</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80"><span class="toc-number">2.</span> <span class="toc-text">响应式布局</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%83%E5%B1%80%E6%AF%94%E8%BE%83"><span class="toc-number">2.1.</span> <span class="toc-text">布局比较</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%9D%99%E6%80%81%E5%B8%83%E5%B1%80-Static-Layout"><span class="toc-number">2.1.1.</span> <span class="toc-text">静态布局(Static Layout)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80-Liquid-Layout"><span class="toc-number">2.1.2.</span> <span class="toc-text">流式布局(Liquid Layout)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E9%80%82%E5%BA%94%E5%B8%83%E5%B1%80-Adaptive-Layout"><span class="toc-number">2.1.3.</span> <span class="toc-text">自适应布局(Adaptive Layout)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80-Responsive-Layout"><span class="toc-number">2.1.4.</span> <span class="toc-text">响应式布局(Responsive Layout)</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80"><span class="toc-number">2.2.</span> <span class="toc-text">设计基础</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#viewport"><span class="toc-number">2.2.1.</span> <span class="toc-text">viewport</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2"><span class="toc-number">2.2.2.</span> <span class="toc-text">媒体查询</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%83%E5%B1%80%E6%96%B9%E6%B3%95"><span class="toc-number">2.3.</span> <span class="toc-text">布局方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BD%91%E6%A0%BC%E8%A7%86%E5%9B%BE"><span class="toc-number">2.3.1.</span> <span class="toc-text">网格视图</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AE%BE%E5%A4%87%E6%96%AD%E7%82%B9"><span class="toc-number">2.3.2.</span> <span class="toc-text">设备断点</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%93%8D%E5%BA%94%E5%BC%8F%E5%9B%BE%E7%89%87"><span class="toc-number">2.4.</span> <span class="toc-text">响应式图片</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9B%BE%E7%89%87%E5%A4%A7%E5%B0%8F"><span class="toc-number">2.4.1.</span> <span class="toc-text">图片大小</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%83%8F%E7%B4%A0%E5%AF%86%E5%BA%A6"><span class="toc-number">2.4.2.</span> <span class="toc-text">像素密度</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9B%BE%E7%89%87%E5%8A%A0%E8%BD%BD%E4%BC%98%E5%8C%96"><span class="toc-number">2.4.3.</span> <span class="toc-text">图片加载优化</span></a></li></ol></li></ol></li></ol>	
+        </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>
