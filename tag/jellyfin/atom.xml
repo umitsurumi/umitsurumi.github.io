@@ -1,0 +1,235 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://www.umi.homes</id>
+    <title>乌弥的小屋 • Posts by &#34;jellyfin&#34; tag</title>
+    <link href="https://www.umi.homes" />
+    <updated>2022-10-09T16:00:00.000Z</updated>
+    <category term="omv" />
+    <category term="jellyfin" />
+    <category term="hexo" />
+    <category term="读书笔记" />
+    <category term="费曼学习法" />
+    <category term="前端" />
+    <category term="JavaScript" />
+    <category term="BOM" />
+    <category term="DOM" />
+    <category term="CSS" />
+    <category term="HTML" />
+    <category term="Vue" />
+    <entry>
+        <id>https://www.umi.homes/posts/2373/</id>
+        <title>OMV+Jellyfin打造个人影视库</title>
+        <link rel="alternate" href="https://www.umi.homes/posts/2373/"/>
+        <content type="html">&lt;h2 id=&#34;关于nas&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#关于nas&#34;&gt;#&lt;/a&gt; 关于 nas&lt;/h2&gt;
+&lt;p&gt;NAS，全称 Network Attached Storage，翻译过来即为网络附属存储。简单来讲的话可以把它当作一个私人云盘来使用。&lt;br&gt;
+NAS 被定义为是一个以数据存储为中心的服务器，它首先具有数据集中存储和集中管理的功能，在这之上，它也可以做为一个私人专属的小服务器使用，实现诸如下载播放、家庭影院、软路由、虚拟机等功能。&lt;/p&gt;
+&lt;h3 id=&#34;为什么要入手nas&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#为什么要入手nas&#34;&gt;#&lt;/a&gt; 为什么要入手 nas&lt;/h3&gt;
+&lt;p&gt;&lt;s&gt;当然是吃饱了没事干瞎折腾。&lt;/s&gt;&lt;br&gt;
+虽然但是每个人对 nas 的理解和需求都不一样，对我个人来讲主要是更换了笔记本电脑后释放存储空间的需要和考虑搭建个人影视库的方便，另外则是对于网盘的不信任（&lt;i&gt;谁知道存在网盘里面的内容哪天就会打不开了呢？而百度的下载限速……emmm&lt;/i&gt;）。&lt;br&gt;
+对于爱折腾的人来说，折腾 nas 的这个过程本身也可以是很有趣的，尤其是花费时间和精力后，实现了自己想要的功能后的满足感。&lt;/p&gt;
+&lt;h3 id=&#34;成品机-or-diy&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#成品机-or-diy&#34;&gt;#&lt;/a&gt; 成品机 or DIY？&lt;/h3&gt;
+&lt;h4 id=&#34;成品nas&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#成品nas&#34;&gt;#&lt;/a&gt; 成品 nas&lt;/h4&gt;
+&lt;p&gt;家用 nas 目前市面上其实已经有很多成熟的产品供人选择，且不说大家耳熟能详的群晖和威联通，新的产品还有万由云、极空间、绿联云等等，像是海康、联想、华为等厂商也推出了私人云产品。&lt;br&gt;
+成熟的 nas 产品，不仅是简单方便开箱即用，而且它们的功能和 app 适配也相对完善，售后服务等更是进一步提升了保障，省心省力。&lt;br&gt;
+当然，成品 nas 的缺点也很明显：一个是价格稍贵，另一个就是硬件上没有太多选择。像是&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9pdGVtLmpkLmNvbS8xMDAwMTUwODc0MzEuaHRtbCNwcm9kdWN0LWRldGFpbA==&#34;&gt;群晖最入门的双盘位 DS220j&lt;/span&gt;，京东目前售价在 1400 元，&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9pdGVtLmpkLmNvbS8xMDAwMTQxODcyODYuaHRtbCNwcm9kdWN0LWRldGFpbA==&#34;&gt;支持 Docker 的 DS220+&lt;/span&gt;则翻了一倍的价格，近 2800 元，而它的配置仅仅才是 J4025+2GB DDR4，也难怪大家常说成品 nas 是 “买软件送硬件”。&lt;/p&gt;
+&lt;h4 id=&#34;diy&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#diy&#34;&gt;#&lt;/a&gt; DIY&lt;/h4&gt;
+&lt;p&gt;DIY 相对成品 nas 来说，在经济上有不小的优势。nas 本身也就是一台专门用于数据存储的电脑，一般家用电脑的配置也完全可以满足 nas 的要求，如果不介意使用二手硬件，去海鲜市场淘一下还能把硬件上的成本进一步降低。而且，基于不同的使用场景和不同的预算水平，DIY 的配置完全可以按需购入，而不是在 nas 厂家提供的选项中进行选择。&lt;br&gt;
+系统方面，DIY 除了使用破解版群晖系统 —— 也就是黑群晖外，较为常见的可供选择的开源系统有&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cudHJ1ZW5hcy5jb20v&#34;&gt;TrueNas&lt;/span&gt;和&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cub3Blbm1lZGlhdmF1bHQub3JnLw==&#34;&gt;OpenMediaVault&lt;/span&gt;，还有最近较为火热的&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly91bnJhaWQubmV0L3po&#34;&gt;UNRAID&lt;/span&gt;。如果习惯 windows 系统，可以考虑 windows server 或者直接 windows 宿主机 + 虚拟机 nas 系统的方法。&lt;br&gt;
+显然，DIY 就是个费时费力的活。不仅需要时间精力的投入，还需要 DIY 玩家有一定的技术水平。另外，在 nas 的 DIY 过程中或是日后的使用中，遇见的问题也只能依靠自己。&lt;/p&gt;
+&lt;p&gt;因此，如果只是需要一台基本功能的 nas，又不想太麻烦，同时经济上也相对较宽裕的，可以直接购买入门级的成品 nas。如果就是想折腾，用二手硬件甚至虚拟机先尝试一下 DIY 的 nas 系统也未尝不可。&lt;/p&gt;
+&lt;h3 id=&#34;个人方案&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#个人方案&#34;&gt;#&lt;/a&gt; 个人方案&lt;/h3&gt;
+&lt;p&gt;成品 nas 的性价比确实不太美丽，DIY 的系统在尝试过 TrueNas 和 OMV 之后最终选择了后者。&lt;br&gt;
+硬件上，因为一开始的目的是希望搭建个人影视库，所以在尝试了 J1900 的矿渣蜗牛后，升级成了 G6900+h610i+8G DDR4。主板上有 4 个 SATA3 和 1 个 M.2，在机箱空间足够的情况下可以放下 4 块 HDD 和 1 个 SSD，并且可以通过预留给显卡的 PCIe 转接进一步扩展。系统盘则是做在了 32G 的 U 盘里面，这样能从主板上解放一个固态位。&lt;/p&gt;
+&lt;h2 id=&#34;系统安装与设置&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#系统安装与设置&#34;&gt;#&lt;/a&gt; 系统安装与设置&lt;/h2&gt;
+&lt;p&gt;omv，全称为 openmediavault，是基于 Linux 内核的 Debian 构建的 nas 系统。omv 在安装上并没有太多困难的，但是因为它是系统与数据相分离的结构 —— 即系统要安装在独立的硬盘上，而我又不太想浪费一个 M.2 硬盘位来装一个 8G 都不到的系统，所以选择了用 U 盘安装。&lt;/p&gt;
+&lt;h3 id=&#34;启动盘制作&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#启动盘制作&#34;&gt;#&lt;/a&gt; 启动盘制作&lt;/h3&gt;
+&lt;p&gt;镜像文件直接从&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cub3Blbm1lZGlhdmF1bHQub3JnLw==&#34;&gt;OMV 官网&lt;/span&gt;下载即可。&lt;br&gt;
+&lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/omv-download.2hbjzsq3p3c0.webp&#34;&gt;&lt;br&gt;
+写入 U 盘，这里用的是 rufus，也有用 BalenaEtcher 的。写入完成后，引导盘就做好了。&lt;br&gt;
+&lt;img style=&#34;width:50%;&#34; data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/omv-rufus.1keqkhuw88f4.webp&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;安装流程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装流程&#34;&gt;#&lt;/a&gt; 安装流程&lt;/h3&gt;
+&lt;p&gt;将做好的引导 U 盘和安装为系统的 U 盘插到 USB 接口上，开机选择引导盘安装。&lt;br&gt;
+语言地区直接选择中文，中国就可以。&lt;br&gt;
+&lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/omv-install.70gqi9uiha80.webp&#34;&gt;&lt;br&gt;
+安装过程中注意要插上网线。如果有多个网口会提示选择一个网口。&lt;br&gt;
+然后这里如果不进行修改的话可以直接回车，默认为 &lt;code&gt;openmediavault.local&lt;/code&gt; 。&lt;br&gt;
+&lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/omv-install02.5o6y0v5b8qk0.webp&#34;&gt;&lt;br&gt;
+之后是设置 root 密码，如果直接回车的话则会禁用 root 账户。&lt;br&gt;
+&lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/omv-install03.5i684oqglnw0.webp&#34;&gt;&lt;br&gt;
+接下来如果有多个存储设备，会提示选择要安装的存储设备，这里选择需要安装的那个 U 盘。没有问题的话就开始系统的安装了。&lt;br&gt;
+&lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/omv-install04.3fo9h863so60.webp&#34;&gt;&lt;br&gt;
+系统安装完成后会提示选择镜像，国内可以选择清华源。&lt;br&gt;
+&lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/omv-install05.6j9leomryv00.webp&#34;&gt;&lt;br&gt;
+设置代理服务器，没有可以直接回车，然后等待安装完成。&lt;br&gt;
+&lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/omv-install06.5kci64bdon80.webp&#34;&gt;&lt;br&gt;
+&lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/omv-install07.1fwkfwb70z1c.webp&#34;&gt;&lt;br&gt;
+&lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/omv-install08.40k7sqcuzqw.webp&#34;&gt;&lt;br&gt;
+安装完成后，&lt;strong&gt;先不要拔出引导盘&lt;/strong&gt;，直接重启系统，选择刚才安装的系统盘启动，进入到命令行界面，再拔出引导盘，完成安装。&lt;br&gt;
+这里如果设置了 root 账户可以用 root 登录。&lt;br&gt;
+&lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/omv-install09.26yo76wa4cys.webp&#34;&gt;&lt;br&gt;
+浏览器访问上面 IP 地址，如：192.168.70.128 即可进入 omv 管理界面。&lt;br&gt;
+默认账户 &lt;code&gt;admin&lt;/code&gt; ，密码为 &lt;code&gt;openmediavault&lt;/code&gt; 。&lt;br&gt;
+登录后配置仪表盘即如图所示。&lt;br&gt;
+&lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/omv-install10.51twito3vvo0.webp&#34;&gt;&lt;br&gt;
+可以看见 SSH 服务是启动了的，因此我们可以用 windows 的 openSSH 客户端远程连接刚刚安装了 omv 的 nas 进行管理。&lt;br&gt;
+用命令提示符或者 powershell，输入 &lt;code&gt;ssh 用户@IP地址&lt;/code&gt; ，然后登录。比如这里是 &lt;code&gt;ssh root@192.168.70.128&lt;/code&gt; &lt;br&gt;
+&lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/omv-install11.1njdplb06jkw.webp&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;设置共享文件夹&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#设置共享文件夹&#34;&gt;#&lt;/a&gt; 设置共享文件夹&lt;/h3&gt;
+&lt;p&gt;登录 omv 管理页面后，在右上角更改 admin 密码、设置语言和配置仪表盘。&lt;br&gt;
+&lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/omv-admin.4jp6og2wyra0.webp&#34;&gt;&lt;br&gt;
+然后在&lt;em&gt;网络 - 接口&lt;/em&gt;中，将 IPv4 从 DHCP 修改为静态 IP 方便访问。&lt;br&gt;
+&lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/omv-ip.6lyhea86p3o0.webp&#34;&gt;&lt;br&gt;
+所有存储设备可以在&lt;em&gt;存储器 - 磁盘&lt;/em&gt;中找到，这里为方便演示使用的是虚拟机。&lt;br&gt;
+&lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/omv-disk.5zjdgg2xdoc0.webp&#34;&gt;&lt;br&gt;
+软 raid 个人因为只有两个硬盘所以做了镜像，可以按照自己实际情况选择。如果硬盘里面有内容会被格式化。&lt;br&gt;
+&lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/omv-raid.28l27jae23ms.webp&#34;&gt;&lt;br&gt;
+然后到&lt;em&gt;文件系统&lt;/em&gt;，点击左上角的&lt;em&gt;新建 | 挂载&lt;/em&gt;，选择&lt;em&gt;创建&lt;/em&gt;将设备挂载上。&lt;br&gt;
+&lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/omv-file-1.5f6zy3ss2ik0.webp&#34;&gt;&lt;br&gt;
+&lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/omv-file-2.1jnrbj8gxkps.webp&#34;&gt;&lt;br&gt;
+接着到&lt;em&gt;共享文件夹&lt;/em&gt;，选择刚才挂载的文件系统进行共享。&lt;br&gt;
+&lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/omv-share-1.32r0r1tun720.webp&#34;&gt;&lt;br&gt;
+&lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/omv-share-2.3nbyneld7x80.webp&#34;&gt;&lt;br&gt;
+在&lt;em&gt;服务&lt;/em&gt;中打开&lt;em&gt; SMB/CIFS&lt;/em&gt;，选择&lt;em&gt;共享&lt;/em&gt;将刚才的共享文件夹创建上去。&lt;br&gt;
+&lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/omv-share-3.3yzf38f9tbo0.webp&#34;&gt;&lt;br&gt;
+为了方便管理，最好从&lt;em&gt;用户 - 用户&lt;/em&gt;，新建一个用户使用共享文件。&lt;br&gt;
+&lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/omv-user.33neyiypd0i0.webp&#34;&gt;&lt;br&gt;
+最后，在自己电脑上将共享文件夹添加上去，就可以使用 omv 的共享文件夹了。&lt;/p&gt;
+&lt;h3 id=&#34;安装clash&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装clash&#34;&gt;#&lt;/a&gt; 安装 Clash&lt;/h3&gt;
+&lt;h4 id=&#34;配置clash&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#配置clash&#34;&gt;#&lt;/a&gt; 配置 Clash&lt;/h4&gt;
+&lt;p&gt;在 Clash &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL0RyZWFtYWNyby9jbGFzaC9yZWxlYXNlcw==&#34;&gt;release&lt;/span&gt;页面下载对应版本，例如 &lt;code&gt;clash-linux-amd64-v3-v1.11.8.gz&lt;/code&gt; :&lt;br&gt;
+ &lt;code&gt;# wget https://github.com/Dreamacro/clash/releases/download/v1.11.8/clash-linux-amd64-v3-v1.11.8.gz&lt;/code&gt; &lt;br&gt;
+ 然后解压缩并重命名为 &lt;code&gt;clash&lt;/code&gt; ，添加可执行权限&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;figcaption data-lang=&#34;Bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;gunzip clash-linux-amd64-v3-v1.11.8.gz      &lt;span class=&#34;token comment&#34;&gt;#解压缩&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;mv&lt;/span&gt; clash-linux-amd64-v3-v1.11.8.gz clash    &lt;span class=&#34;token comment&#34;&gt;#重命名&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;chmod&lt;/span&gt; u+x clash     &lt;span class=&#34;token comment&#34;&gt;#添加可执行权限&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;之后通过 &lt;code&gt;./clash&lt;/code&gt;  启动，第一次启动 clash 时会自动下载配置文件，位置在 &lt;code&gt;/.config/clash&lt;/code&gt;  下。&lt;br&gt;
+使用网络服务商的服务，需要先找到提供的 clash 订阅链接，然后下载配置文件并保存到 &lt;code&gt;/.config/clash/config.yaml&lt;/code&gt; 。&lt;/p&gt;
+&lt;h4 id=&#34;配置开机启动&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#配置开机启动&#34;&gt;#&lt;/a&gt; 配置开机启动&lt;/h4&gt;
+&lt;p&gt;Linux 系统使用 systemd 作为启动服务器管理机制，首先把 Clash 可执行文件拷贝到 &lt;code&gt;/usr/local/bin&lt;/code&gt;  目录，相关配置拷贝到 &lt;code&gt;/etc/clash&lt;/code&gt;  目录。&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;figcaption data-lang=&#34;Bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;mkdir&lt;/span&gt; /etc/clash&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;cp&lt;/span&gt; clash /usr/local/bin&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;cp&lt;/span&gt; config.yaml /etc/clash/&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;cp&lt;/span&gt; Country.mmdb /etc/clash/&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;创建 systemd 服务配置文件 &lt;code&gt;vim /etc/systemd/system/clash.service&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-config&#34;&gt;[Unit]
+Description=Clash daemon, A rule-based proxy in Go.
+After=network.target
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/usr/local/bin/clash -d /etc/clash
+
+[Install]
+WantedBy=multi-user.target
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;使用 systemctl 开启 clash&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;figcaption data-lang=&#34;Bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;systemctl &lt;span class=&#34;token builtin class-name&#34;&gt;enable&lt;/span&gt; clash      &lt;span class=&#34;token comment&#34;&gt;#clash 开机自启动&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;systemctl start clash       &lt;span class=&#34;token comment&#34;&gt;#开启 clash&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;systemctl status clash      &lt;span class=&#34;token comment&#34;&gt;#查看 clash 日志&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;journalctl &lt;span class=&#34;token parameter variable&#34;&gt;-xe&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h4 id=&#34;使用webui&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#使用webui&#34;&gt;#&lt;/a&gt; 使用 webUI&lt;/h4&gt;
+&lt;p&gt;如果要使用 webUI 进行管理，则将 clash dashboard 代码也克隆到 &lt;code&gt;/etc/clash&lt;/code&gt;  目录&lt;br&gt;
+ &lt;code&gt;git clone -b gh-pages --depth 1 https://github.com/Dreamacro/clash-dashboard /etc/clash/clash-dashboard &lt;/code&gt; &lt;br&gt;
+同时修改 &lt;code&gt;config.yaml&lt;/code&gt;  文件&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;figcaption data-lang=&#34;Bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;external-controller: &lt;span class=&#34;token number&#34;&gt;0.0&lt;/span&gt;.0.0:9090       &lt;span class=&#34;token comment&#34;&gt;#修改 ip 地址和端口；&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;external-ui: /etc/clash/clash-dashboard     &lt;span class=&#34;token comment&#34;&gt;#clash-dashboard 的路径；&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;secret:&lt;span class=&#34;token string&#34;&gt;&#39;123456&#39;&lt;/span&gt;     &lt;span class=&#34;token comment&#34;&gt;#连接的密钥，自行设置；&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;完成后重启 clash： &lt;code&gt;systemctl restart clash &lt;/code&gt; &lt;br&gt;
+之后访问 &lt;code&gt;本地地址:9090/ui&lt;/code&gt; ，填写刚才设置的 host、端口和密钥即可。&lt;/p&gt;
+&lt;h3 id=&#34;omv其他设置&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#omv其他设置&#34;&gt;#&lt;/a&gt; omv 其他设置&lt;/h3&gt;
+&lt;p&gt;官方自带的插件可以在&lt;em&gt;系统 - 插件&lt;/em&gt;中找到。&lt;br&gt;
+国内使用清华镜像源可以参考&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9taXJyb3JzLnR1bmEudHNpbmdodWEuZWR1LmNuL2hlbHAvb3Blbm1lZGlhdmF1bHQv&#34;&gt;官方设置&lt;/span&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;启用docker&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#启用docker&#34;&gt;#&lt;/a&gt; 启用 docker&lt;/h2&gt;
+&lt;p&gt;当然，仅靠 omv 自带的功能和系统插件，能实现的效果还是不够，这就需要使用 docker 了。&lt;/p&gt;
+&lt;h3 id=&#34;安装omv-extras&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装omv-extras&#34;&gt;#&lt;/a&gt; 安装 omv-extras&lt;/h3&gt;
+&lt;p&gt;omv 要启用 docker 并在 web 端进行管理的话需要安装 omv-extras。&lt;br&gt;
+官网地址：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9mb3J1bS5vcGVubWVkaWF2YXVsdC5vcmcvaW5kZXgucGhwP3RocmVhZC81NTQ5LW9tdi1leHRyYXMtb3JnLXBsdWdpbi8=&#34;&gt;https://forum.openmediavault.org/index.php?thread/5549-omv-extras-org-plugin/&lt;/span&gt;&lt;br&gt;
+ 清华大学源：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9taXJyb3JzLnR1bmEudHNpbmdodWEuZWR1LmNuL09wZW5NZWRpYVZhdWx0L29wZW5tZWRpYXZhdWx0LXBsdWdpbi1kZXZlbG9wZXJzL3Bvb2wvbWFpbi9vL29wZW5tZWRpYXZhdWx0LW9tdmV4dHJhc29yZy8=&#34;&gt;https://mirrors.tuna.tsinghua.edu.cn/OpenMediaVault/openmediavault-plugin-developers/pool/main/o/openmediavault-omvextrasorg/&lt;/span&gt;&lt;br&gt;
+ 国内还是选择清华大学源。选择对应版本的安装包下载。&lt;br&gt;
+&lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/omv-extras-1.32zh0cwg9vo.webp&#34;&gt;&lt;br&gt;
+命令行安装&lt;br&gt;
+ &lt;code&gt;wget https://mirrors.tuna.tsinghua.edu.cn/OpenMediaVault/openmediavault-plugin-developers/pool/main/o/openmediavault-omvextrasorg/openmediavault-omvextrasorg_6.1.1_all.deb&lt;/code&gt; &lt;br&gt;
+ &lt;code&gt;dpkg -i openmediavault-omvextrasorg_6.1.1_all.deb&lt;/code&gt; &lt;br&gt;
+ 安装后会提示缺少依赖，按照提示继续输入&lt;br&gt;
+ &lt;code&gt;apt --fix-broken install&lt;/code&gt; &lt;br&gt;
+ 修复依赖关系，然后把系统更新到最新。&lt;br&gt;
+ &lt;code&gt;apt update &amp;amp;&amp;amp; apt upgrade&lt;/code&gt; &lt;br&gt;
+ 然后刷新 omv 网页管理界面，已经有 omv-extras 选项了。&lt;br&gt;
+&lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/omv-extras-2.3y09mp2chec0.webp&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;安装docker&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装docker&#34;&gt;#&lt;/a&gt; 安装 docker&lt;/h3&gt;
+&lt;p&gt;安装完成 omv-extras 可以直接在里面安装 docker 和 portainer，后者是一个可视化的 Docker 操作界面。&lt;br&gt;
+&lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/omv-docker-1.1l29r4p899wg.webp&#34;&gt;&lt;br&gt;
+&lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/omv-docker-2.48vygos3biw0.webp&#34;&gt;&lt;br&gt;
+安装完成后在 omv 的 9000 端口打开，如此处 &lt;code&gt;192.168.70.128:9000&lt;/code&gt; ，这里可以进行 docker 镜像和容器的管理。&lt;br&gt;
+&lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/omv-docker-3.74lbgs5a84c0.webp&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;jellyfin&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#jellyfin&#34;&gt;#&lt;/a&gt; Jellyfin&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9qZWxseWZpbi5vcmcv&#34;&gt;Jellyfin&lt;/span&gt;是一套多媒体应用程序软件套装，旨在组织、管理和共享数字媒体文件，是 Emby 的一个自由开源分叉。&lt;br&gt;
+这里在服务端安装的 jellyfin 使用的是&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9odWIuZG9ja2VyLmNvbS9yL255YW5taXNha2EvamVsbHlmaW4=&#34;&gt;中国特供版的镜像&lt;/span&gt;，它已经打包好了 Intel 驱动（用于使用 QSV 硬解转码）、jellyfin-ffmpeg、补丁、CJK 系统字体等，可以实现开箱即用，免去折腾驱动，中文字体等麻烦。&lt;/p&gt;
+&lt;h3 id=&#34;运行容器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#运行容器&#34;&gt;#&lt;/a&gt; 运行容器&lt;/h3&gt;
+&lt;p&gt;首先拉取容器最新镜像 &lt;code&gt;docker pull nyanmisaka/jellyfin&lt;/code&gt; &lt;br&gt;
+ 然后这里采用 &lt;code&gt;portainer&lt;/code&gt;  安装：&lt;br&gt;
+&lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/jellyfin-install.4wgpta3l9uw0.webp&#34;&gt;&lt;br&gt;
+然后参考&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9qZWxseWZpbi5vcmcvZG9jcy9nZW5lcmFsL2FkbWluaXN0cmF0aW9uL2luc3RhbGxpbmcuaHRtbA==&#34;&gt;Jellyfin 官网&lt;/span&gt;在 &lt;code&gt;docker compose file&lt;/code&gt;  中填入：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;version: &amp;quot;3.5&amp;quot;
+services:
+  jellyfin:
+    image: nyanmisaka/jellyfin:latest   #使用中国特供版镜像
+    container_name: jellyfin
+    environment:
+      - PUID=1000
+      - PGID=100
+      - TZ=Asia/Shanghai    #时区使用Asia/Shanghai
+      - JELLYFIN_PublishedServerUrl=192.168.0.5 #optional
+    volumes:    #修改磁盘映射
+      - /path/to/config:/config #对应配置文件
+      - /path/to/cache:/cache   #对应缓存
+      - /path/to/media:/media   #对应媒体文件
+      - /path/to/media2:/media2:ro
+    ports:
+      - 8096:8096 #webUI端口
+      - 8920:8920 #optional
+      - 7359:7359/udp #optional
+      - 1900:1900/udp #optional
+    devices:
+      - /dev/dri:/dev/dri   #Intel集显驱动
+    restart: unless-stopped
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;填写完成后点击 &lt;code&gt;Deploy the stack&lt;/code&gt;  即可。&lt;br&gt;
+之后访问 &lt;code&gt;本地地址:8096&lt;/code&gt;  端口，成功部署运行会进入 jellyfin 登录界面。&lt;/p&gt;
+&lt;h3 id=&#34;设置jellyfin&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#设置jellyfin&#34;&gt;#&lt;/a&gt; 设置 jellyfin&lt;/h3&gt;
+&lt;p&gt;进入 web 页面设置其实没什么好记录的，基本上按照顺序把媒体库设置好就可以了。&lt;br&gt;
+硬件转码在&lt;em&gt;控制台 - 播放&lt;/em&gt;中开启。&lt;br&gt;
+&lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/jellyfin-set.ejnbskcbgvc.webp&#34;&gt;&lt;br&gt;
+需要注意的是，为了能正确搜刮到元数据的话，对应媒体库的命名尽量参考&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9qZWxseWZpbi5vcmcvZG9jcy9nZW5lcmFsL3NlcnZlci9tZWRpYS9zaG93cy5odG1s&#34;&gt;Jellyfin 推荐命名&lt;/span&gt;和&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cudGhlbW92aWVkYi5vcmcv&#34;&gt;TheMovieDB 剧集&lt;/span&gt;来进行。&lt;br&gt;
+举例说明：&lt;br&gt;
+如路人女主是两季 TV + 剧场版，两季 TV 中各有一集 OVA。但是查询 themoviedb 发现 ova 剧集是单独放在特别篇中的：&lt;br&gt;
+&lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/jellyfin-metadata01.4xd0h5aq6lq0.webp&#34;&gt;&lt;br&gt;
+因此两季的 ova 应该被单独拿出来放在 &lt;code&gt;S00&lt;/code&gt;  文件夹中，文件目录应该如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;动画
+└── 路人女主的养成方法
+    ├── S00
+    │   ├── S00E01.mkv #第一季ova
+    │   └── S00E02.mkv #第二季ova
+    ├── S01
+    │   ├── S01E01.mkv
+    │   ├── S01E02.mkv
+    │   ├── S01E03.mkv
+    │   └── ...
+    └── S02
+        ├── S02E01.mkv
+        └── S02E02.mkv
+        └── ...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;正确识别搜刮的元数据如下：&lt;br&gt;
+&lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/jellyfin-metadata02.50j4sdsl9280.webp&#34;&gt;&lt;br&gt;
+&lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/jellyfin-metadata03.7gbfm29jmkc0.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;插件上除了使用官方的插件库外还有如下几个：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#用于从bangumi番组计划搜刮元数据
+https://jellyfin-plugin-bangumi.pages.dev/repository.json
+#用于从豆瓣搜刮元数据
+https://raw.githubusercontent.com/caryyu/jellyfin-plugin-repo/master/manifest-us.json
+#一个jellyfin主题管理插件
+https://raw.githubusercontent.com/danieladov/JellyfinPluginManifest/master/manifest.json
+&lt;/code&gt;&lt;/pre&gt;
+&lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/jellyfin-plugin.6uxg0y7jskk0.webp&#34;&gt;
+&lt;h2 id=&#34;参考&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#参考&#34;&gt;#&lt;/a&gt; 参考&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9wb3N0LnNtemRtLmNvbS9wL2F2N3oyNTY0Lw==&#34;&gt;OMV 安装：系统安装设置及一些功能的开启&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuY2hpcGhlbGwuY29tL3RocmVhZC0yMzc1Nzc3LTEtMS5odG1s&#34;&gt;] Jellyfin 中国特供版 + Docker 镜像，含驱动，免折腾开箱即用&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC8zNjM2NTI4OTk=&#34;&gt;omv 家用 nas 搭建 [4]， jellyfin 部署&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuaGltaWt1LmNvbS9hcmNoaXZlcy9kZXBsb3ktYS1tb3JlLWNvbWZvcnRhYmxlLWFuaW1hdGlvbi1saWJyYXJ5LXdpdGgtamVsbHlmaW4tYW5kLWJhbmd1bWkuaHRtbA==&#34;&gt;利用 Jellyfin + Bangumi 打造更舒适的动画媒体库&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9qZWxseWZpbi5vcmcvZG9jcy9nZW5lcmFsL3NlcnZlci9tZWRpYS9zaG93cy5odG1s&#34;&gt;Jellyfin 节目命名指南&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+        <category term="omv" />
+        <category term="jellyfin" />
+        <updated>2022-10-09T16:00:00.000Z</updated>
+    </entry>
+</feed>

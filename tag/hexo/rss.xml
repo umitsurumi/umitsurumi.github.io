@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>乌弥的小屋 • Posts by &#34;hexo&#34; tag</title>
+        <link>https://www.umi.homes</link>
+        <description>乌弥的个人博客</description>
+        <language>zh-CN</language>
+        <pubDate>Sun, 19 Jun 2022 00:00:00 +0800</pubDate>
+        <lastBuildDate>Sun, 19 Jun 2022 00:00:00 +0800</lastBuildDate>
+        <category>omv</category>
+        <category>jellyfin</category>
+        <category>hexo</category>
+        <category>读书笔记</category>
+        <category>费曼学习法</category>
+        <category>前端</category>
+        <category>JavaScript</category>
+        <category>BOM</category>
+        <category>DOM</category>
+        <category>CSS</category>
+        <category>HTML</category>
+        <category>Vue</category>
+        <item>
+            <guid isPermalink="true">https://www.umi.homes/posts/58410/</guid>
+            <title>gitpage笔记</title>
+            <link>https://www.umi.homes/posts/58410/</link>
+            <category>hexo</category>
+            <pubDate>Sun, 19 Jun 2022 00:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;githubpage建站&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#githubpage建站&#34;&gt;#&lt;/a&gt; githubpage 建站&lt;/h2&gt;
+&lt;p&gt;主要参看&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kb2NzLmdpdGh1Yi5jb20vY24vcGFnZXMvcXVpY2tzdGFydA==&#34;&gt;github 的官方文档&lt;/span&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;创建站点&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#创建站点&#34;&gt;#&lt;/a&gt; 创建站点&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;在 github 网站任何页面的右上角，使用 &lt;code&gt;+&lt;/code&gt;  下拉菜单选择里面的 &lt;code&gt;New  repository&lt;/code&gt;  新建仓库。&lt;/li&gt;
+&lt;li&gt;输入 &lt;code&gt;username.github.io&lt;/code&gt;  作为仓库名。&lt;br&gt;
+实际上不用 &lt;code&gt;username&lt;/code&gt;  也可以，但是在后续设置的时候会有需要注意的地方。&lt;br&gt;
+&lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/create-page-1.qrl2d7cw6zk.webp&#34;&gt;&lt;/li&gt;
+&lt;li&gt;在仓库中，点击 &lt;code&gt;Setting&lt;/code&gt; ，在边栏的 &lt;code&gt;Code and automation&lt;/code&gt;  部分，选择 &lt;code&gt;Pages&lt;/code&gt; 。&lt;/li&gt;
+&lt;li&gt;之后点击 &lt;code&gt;Choose a theme&lt;/code&gt;  然后选择一个主题，选择完成后 &lt;code&gt;README.MD&lt;/code&gt;  会自动打开，到这一步 gitpage 页面就已经生成了。&lt;br&gt;
+&lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/create-page-2.3ncjx27o20m0.webp&#34;&gt;&lt;/li&gt;
+&lt;li&gt;访问 &lt;code&gt;username.github.io&lt;/code&gt;  就可以看见刚才创建的站点了。&lt;br&gt;
+&lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/create-page-3.dbmuewwadm8.webp&#34;&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;使用hexo&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#使用hexo&#34;&gt;#&lt;/a&gt; 使用 Hexo&lt;/h2&gt;
+&lt;p&gt;使用 gitpage 创建站点还是很简单的，之后就是站点的主题美化和内容创作了。在比较了 &lt;code&gt;Jeklly&lt;/code&gt;  和 &lt;code&gt;Hexo&lt;/code&gt;  后，我选择了 &lt;code&gt;Hexo&lt;/code&gt;  作为工具。&lt;/p&gt;
+&lt;h3 id=&#34;安装hexo&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装hexo&#34;&gt;#&lt;/a&gt; 安装 Hexo&lt;/h3&gt;
+&lt;p&gt;这部分内容主要参考&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL3poLWNuL2RvY3Mv&#34;&gt;Hexo 中文文档&lt;/span&gt;&lt;br&gt;
+Hexo 是一个快速、简洁且高效的博客框架，利用 Markdown 解析文章，生成静态网页。&lt;/p&gt;
+&lt;h4 id=&#34;安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装&#34;&gt;#&lt;/a&gt; 安装&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;安装前提
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ub2RlanMub3JnL2VuLw==&#34;&gt;Node.js&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2dpdC1zY20uY29tLw==&#34;&gt;Git&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;安装 Hexo&lt;br&gt;
+ 安装完成 Node.js 和 Git，使用 npm 安装 Hexo。&lt;pre&gt;&lt;code&gt;$ npm install -g hexo-cli
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;初始化&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#初始化&#34;&gt;#&lt;/a&gt; 初始化&lt;/h4&gt;
+&lt;p&gt;Hexo 安装完成后，在我们需要创建博客文档的位置下，输入以下指令初始化博客：&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo init &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;blogfolder&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;    //存放博客的文档&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token builtin class-name&#34;&gt;cd&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;blogfolder&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo new &lt;span class=&#34;token builtin class-name&#34;&gt;test&lt;/span&gt;    //生成测试博客&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo g&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo s    //启动服务器&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;默认情况下访问 &lt;code&gt;localhost:4000&lt;/code&gt;  就可以看见刚才部署完成的效果了&lt;/p&gt;
+&lt;h3 id=&#34;与gitpage关联&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#与gitpage关联&#34;&gt;#&lt;/a&gt; 与 gitpage 关联&lt;/h3&gt;
+&lt;p&gt;在刚才创建完成后，本地的文档情况应如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;.
+├── _config.yml    //网站配置信息
+├── package.json    //应用程序信息
+├── scaffolds    //模板文件夹
+├── source    //用户资源信息
+│   ├── _drafts
+│   └── _posts //.md博客文档存放位置
+└── themes    //网站主题
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;在 &lt;code&gt;_config.yml&lt;/code&gt;  文件中，找到最后的 &lt;code&gt;# Deployment&lt;/code&gt; ，并配置如下：&lt;/p&gt;
+&lt;figure class=&#34;highlight json&#34;&gt;&lt;figcaption data-lang=&#34;JSON&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;deploy&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  type&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; git&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  repo&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; https&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token comment&#34;&gt;//github.com/umitsurumi/umitsurumi.github.io.git&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  branch&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; pages&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;之后为 hexo 安装部署插件：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;npm install hexo-deployer-git --save
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;然后通过以下三条命令完成部署：&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo clean&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo g&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo d&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;之后通过之前的 gitpage 域名 &lt;code&gt;username.github.io&lt;/code&gt;  就可以对部署好的博客网页进行访问了。&lt;/p&gt;
+&lt;h3 id=&#34;使用主题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#使用主题&#34;&gt;#&lt;/a&gt; 使用主题&lt;/h3&gt;
+&lt;p&gt;Hexo 的主题可以参看&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL3RoZW1lcy8=&#34;&gt;官网&lt;/span&gt;提供的模板，也可以从 GitHub 仓库中查找。当然也可以自行创作。&lt;br&gt;
+以 &lt;code&gt;https://github.com/wayou/hexo-theme-gstyle&lt;/code&gt;  主题为例：&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;//在博客文件夹下克隆仓库到本地&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; clone https://github.com/wayou/hexo-theme-gstyle.git themes/gstyle&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;//在配置文件_config.yml的theme中修改&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ theme: gstyle&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;//然后使用发布命令&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo clean &lt;span class=&#34;token operator&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; hexo g &lt;span class=&#34;token operator&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; hexo d&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;开始写作&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#开始写作&#34;&gt;#&lt;/a&gt; 开始写作&lt;/h3&gt;
+&lt;p&gt;使用 &lt;code&gt;$ hexo new [layout] &amp;lt;title&amp;gt;&lt;/code&gt;  命令创建一篇新文章或者新页面。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ hexo new draft &amp;quot;my-draft&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;就会使用 &lt;code&gt;scaffolds&lt;/code&gt;  文件夹下面对应的布局文件来创建新文件。&lt;br&gt;
+Hexo 有三种默认布局 &lt;code&gt;post&lt;/code&gt; 、 &lt;code&gt;page&lt;/code&gt;  和 &lt;code&gt;draft&lt;/code&gt; ，它们都保存在 &lt;code&gt;scaffolds&lt;/code&gt;  文件夹下。而创建这三种不同类型的文件时，它们也会分别保存到不同的路径。自定义的其他布局也和 &lt;code&gt;post&lt;/code&gt;  相同，都存储在 &lt;code&gt;source/_posts&lt;/code&gt;  文件夹中。&lt;/p&gt;
+&lt;h3 id=&#34;可能遇到的问题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#可能遇到的问题&#34;&gt;#&lt;/a&gt; 可能遇到的问题&lt;/h3&gt;
+&lt;p&gt;可能有 Hexo 使用主题后不生效或者在本地服务器上查看生效而部署后则失效的情况。&lt;br&gt;
+这时候可以查看 &lt;code&gt;_config.yml&lt;/code&gt;  文件中的 URL 看配置是否正确：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;url: https://github.com/umitsurumi/umitsurumi.github.io/blog
+root: /umitsurumi.github.io/
+&lt;/code&gt;&lt;/pre&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>
