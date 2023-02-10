@@ -7,18 +7,18 @@
         <language>zh-CN</language>
         <pubDate>Mon, 10 Oct 2022 00:00:00 +0800</pubDate>
         <lastBuildDate>Mon, 10 Oct 2022 00:00:00 +0800</lastBuildDate>
-        <category>omv</category>
-        <category>jellyfin</category>
-        <category>hexo</category>
         <category>读书笔记</category>
         <category>费曼学习法</category>
+        <category>hexo</category>
         <category>前端</category>
         <category>JavaScript</category>
+        <category>omv</category>
+        <category>jellyfin</category>
         <category>BOM</category>
         <category>DOM</category>
         <category>CSS</category>
-        <category>HTML</category>
         <category>Vue</category>
+        <category>HTML</category>
         <item>
             <guid isPermalink="true">https://www.umi.homes/posts/2373/</guid>
             <title>OMV+Jellyfin打造个人影视库</title>
@@ -26,15 +26,15 @@
             <category>omv</category>
             <category>jellyfin</category>
             <pubDate>Mon, 10 Oct 2022 00:00:00 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;关于nas&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#关于nas&#34;&gt;#&lt;/a&gt; 关于 nas&lt;/h2&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;关于-nas&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#关于-nas&#34;&gt;#&lt;/a&gt; 关于 nas&lt;/h2&gt;
 &lt;p&gt;NAS，全称 Network Attached Storage，翻译过来即为网络附属存储。简单来讲的话可以把它当作一个私人云盘来使用。&lt;br&gt;
 NAS 被定义为是一个以数据存储为中心的服务器，它首先具有数据集中存储和集中管理的功能，在这之上，它也可以做为一个私人专属的小服务器使用，实现诸如下载播放、家庭影院、软路由、虚拟机等功能。&lt;/p&gt;
-&lt;h3 id=&#34;为什么要入手nas&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#为什么要入手nas&#34;&gt;#&lt;/a&gt; 为什么要入手 nas&lt;/h3&gt;
+&lt;h3 id=&#34;为什么要入手-nas&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#为什么要入手-nas&#34;&gt;#&lt;/a&gt; 为什么要入手 nas&lt;/h3&gt;
 &lt;p&gt;&lt;s&gt;当然是吃饱了没事干瞎折腾。&lt;/s&gt;&lt;br&gt;
 虽然但是每个人对 nas 的理解和需求都不一样，对我个人来讲主要是更换了笔记本电脑后释放存储空间的需要和考虑搭建个人影视库的方便，另外则是对于网盘的不信任（&lt;i&gt;谁知道存在网盘里面的内容哪天就会打不开了呢？而百度的下载限速……emmm&lt;/i&gt;）。&lt;br&gt;
 对于爱折腾的人来说，折腾 nas 的这个过程本身也可以是很有趣的，尤其是花费时间和精力后，实现了自己想要的功能后的满足感。&lt;/p&gt;
 &lt;h3 id=&#34;成品机-or-diy&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#成品机-or-diy&#34;&gt;#&lt;/a&gt; 成品机 or DIY？&lt;/h3&gt;
-&lt;h4 id=&#34;成品nas&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#成品nas&#34;&gt;#&lt;/a&gt; 成品 nas&lt;/h4&gt;
+&lt;h4 id=&#34;成品-nas&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#成品-nas&#34;&gt;#&lt;/a&gt; 成品 nas&lt;/h4&gt;
 &lt;p&gt;家用 nas 目前市面上其实已经有很多成熟的产品供人选择，且不说大家耳熟能详的群晖和威联通，新的产品还有万由云、极空间、绿联云等等，像是海康、联想、华为等厂商也推出了私人云产品。&lt;br&gt;
 成熟的 nas 产品，不仅是简单方便开箱即用，而且它们的功能和 app 适配也相对完善，售后服务等更是进一步提升了保障，省心省力。&lt;br&gt;
 当然，成品 nas 的缺点也很明显：一个是价格稍贵，另一个就是硬件上没有太多选择。像是&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9pdGVtLmpkLmNvbS8xMDAwMTUwODc0MzEuaHRtbCNwcm9kdWN0LWRldGFpbA==&#34;&gt;群晖最入门的双盘位 DS220j&lt;/span&gt;，京东目前售价在 1400 元，&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9pdGVtLmpkLmNvbS8xMDAwMTQxODcyODYuaHRtbCNwcm9kdWN0LWRldGFpbA==&#34;&gt;支持 Docker 的 DS220+&lt;/span&gt;则翻了一倍的价格，近 2800 元，而它的配置仅仅才是 J4025+2GB DDR4，也难怪大家常说成品 nas 是 “买软件送硬件”。&lt;/p&gt;
@@ -100,8 +100,8 @@ NAS 被定义为是一个以数据存储为中心的服务器，它首先具有�
 为了方便管理，最好从&lt;em&gt;用户 - 用户&lt;/em&gt;，新建一个用户使用共享文件。&lt;br&gt;
 &lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/omv-user.33neyiypd0i0.webp&#34;&gt;&lt;br&gt;
 最后，在自己电脑上将共享文件夹添加上去，就可以使用 omv 的共享文件夹了。&lt;/p&gt;
-&lt;h3 id=&#34;安装clash&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装clash&#34;&gt;#&lt;/a&gt; 安装 Clash&lt;/h3&gt;
-&lt;h4 id=&#34;配置clash&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#配置clash&#34;&gt;#&lt;/a&gt; 配置 Clash&lt;/h4&gt;
+&lt;h3 id=&#34;安装-clash&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装-clash&#34;&gt;#&lt;/a&gt; 安装 Clash&lt;/h3&gt;
+&lt;h4 id=&#34;配置-clash&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#配置-clash&#34;&gt;#&lt;/a&gt; 配置 Clash&lt;/h4&gt;
 &lt;p&gt;在 Clash &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL0RyZWFtYWNyby9jbGFzaC9yZWxlYXNlcw==&#34;&gt;release&lt;/span&gt;页面下载对应版本，例如 &lt;code&gt;clash-linux-amd64-v3-v1.11.8.gz&lt;/code&gt; :&lt;br&gt;
  &lt;code&gt;# wget https://github.com/Dreamacro/clash/releases/download/v1.11.8/clash-linux-amd64-v3-v1.11.8.gz&lt;/code&gt; &lt;br&gt;
  然后解压缩并重命名为 &lt;code&gt;clash&lt;/code&gt; ，添加可执行权限&lt;/p&gt;
@@ -123,18 +123,18 @@ ExecStart=/usr/local/bin/clash -d /etc/clash
 WantedBy=multi-user.target
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;使用 systemctl 开启 clash&lt;/p&gt;
-&lt;figure class=&#34;highlight shell&#34;&gt;&lt;figcaption data-lang=&#34;Bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;systemctl &lt;span class=&#34;token builtin class-name&#34;&gt;enable&lt;/span&gt; clash      &lt;span class=&#34;token comment&#34;&gt;#clash 开机自启动&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;systemctl start clash       &lt;span class=&#34;token comment&#34;&gt;#开启 clash&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;systemctl status clash      &lt;span class=&#34;token comment&#34;&gt;#查看 clash 日志&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;journalctl &lt;span class=&#34;token parameter variable&#34;&gt;-xe&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h4 id=&#34;使用webui&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#使用webui&#34;&gt;#&lt;/a&gt; 使用 webUI&lt;/h4&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;figcaption data-lang=&#34;Bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;systemctl &lt;span class=&#34;token builtin class-name&#34;&gt;enable&lt;/span&gt; clash      &lt;span class=&#34;token comment&#34;&gt;#clash 开机自启动&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;systemctl start clash       &lt;span class=&#34;token comment&#34;&gt;#开启 clash&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;systemctl status clash      &lt;span class=&#34;token comment&#34;&gt;#查看 clash 日志&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;journalctl &lt;span class=&#34;token parameter variable&#34;&gt;-xe&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h4 id=&#34;使用-webui&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#使用-webui&#34;&gt;#&lt;/a&gt; 使用 webUI&lt;/h4&gt;
 &lt;p&gt;如果要使用 webUI 进行管理，则将 clash dashboard 代码也克隆到 &lt;code&gt;/etc/clash&lt;/code&gt;  目录&lt;br&gt;
  &lt;code&gt;git clone -b gh-pages --depth 1 https://github.com/Dreamacro/clash-dashboard /etc/clash/clash-dashboard &lt;/code&gt; &lt;br&gt;
 同时修改 &lt;code&gt;config.yaml&lt;/code&gt;  文件&lt;/p&gt;
 &lt;figure class=&#34;highlight shell&#34;&gt;&lt;figcaption data-lang=&#34;Bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;external-controller: &lt;span class=&#34;token number&#34;&gt;0.0&lt;/span&gt;.0.0:9090       &lt;span class=&#34;token comment&#34;&gt;#修改 ip 地址和端口；&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;external-ui: /etc/clash/clash-dashboard     &lt;span class=&#34;token comment&#34;&gt;#clash-dashboard 的路径；&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;secret:&lt;span class=&#34;token string&#34;&gt;&#39;123456&#39;&lt;/span&gt;     &lt;span class=&#34;token comment&#34;&gt;#连接的密钥，自行设置；&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;完成后重启 clash： &lt;code&gt;systemctl restart clash &lt;/code&gt; &lt;br&gt;
 之后访问 &lt;code&gt;本地地址:9090/ui&lt;/code&gt; ，填写刚才设置的 host、端口和密钥即可。&lt;/p&gt;
-&lt;h3 id=&#34;omv其他设置&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#omv其他设置&#34;&gt;#&lt;/a&gt; omv 其他设置&lt;/h3&gt;
+&lt;h3 id=&#34;omv-其他设置&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#omv-其他设置&#34;&gt;#&lt;/a&gt; omv 其他设置&lt;/h3&gt;
 &lt;p&gt;官方自带的插件可以在&lt;em&gt;系统 - 插件&lt;/em&gt;中找到。&lt;br&gt;
 国内使用清华镜像源可以参考&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9taXJyb3JzLnR1bmEudHNpbmdodWEuZWR1LmNuL2hlbHAvb3Blbm1lZGlhdmF1bHQv&#34;&gt;官方设置&lt;/span&gt;。&lt;/p&gt;
-&lt;h2 id=&#34;启用docker&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#启用docker&#34;&gt;#&lt;/a&gt; 启用 docker&lt;/h2&gt;
+&lt;h2 id=&#34;启用-docker&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#启用-docker&#34;&gt;#&lt;/a&gt; 启用 docker&lt;/h2&gt;
 &lt;p&gt;当然，仅靠 omv 自带的功能和系统插件，能实现的效果还是不够，这就需要使用 docker 了。&lt;/p&gt;
-&lt;h3 id=&#34;安装omv-extras&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装omv-extras&#34;&gt;#&lt;/a&gt; 安装 omv-extras&lt;/h3&gt;
+&lt;h3 id=&#34;安装-omv-extras&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装-omv-extras&#34;&gt;#&lt;/a&gt; 安装 omv-extras&lt;/h3&gt;
 &lt;p&gt;omv 要启用 docker 并在 web 端进行管理的话需要安装 omv-extras。&lt;br&gt;
 官网地址：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9mb3J1bS5vcGVubWVkaWF2YXVsdC5vcmcvaW5kZXgucGhwP3RocmVhZC81NTQ5LW9tdi1leHRyYXMtb3JnLXBsdWdpbi8=&#34;&gt;https://forum.openmediavault.org/index.php?thread/5549-omv-extras-org-plugin/&lt;/span&gt;&lt;br&gt;
  清华大学源：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9taXJyb3JzLnR1bmEudHNpbmdodWEuZWR1LmNuL09wZW5NZWRpYVZhdWx0L29wZW5tZWRpYXZhdWx0LXBsdWdpbi1kZXZlbG9wZXJzL3Bvb2wvbWFpbi9vL29wZW5tZWRpYXZhdWx0LW9tdmV4dHJhc29yZy8=&#34;&gt;https://mirrors.tuna.tsinghua.edu.cn/OpenMediaVault/openmediavault-plugin-developers/pool/main/o/openmediavault-omvextrasorg/&lt;/span&gt;&lt;br&gt;
@@ -149,7 +149,7 @@ WantedBy=multi-user.target
  &lt;code&gt;apt update &amp;amp;&amp;amp; apt upgrade&lt;/code&gt; &lt;br&gt;
  然后刷新 omv 网页管理界面，已经有 omv-extras 选项了。&lt;br&gt;
 &lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/omv-extras-2.3y09mp2chec0.webp&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;安装docker&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装docker&#34;&gt;#&lt;/a&gt; 安装 docker&lt;/h3&gt;
+&lt;h3 id=&#34;安装-docker&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装-docker&#34;&gt;#&lt;/a&gt; 安装 docker&lt;/h3&gt;
 &lt;p&gt;安装完成 omv-extras 可以直接在里面安装 docker 和 portainer，后者是一个可视化的 Docker 操作界面。&lt;br&gt;
 &lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/omv-docker-1.1l29r4p899wg.webp&#34;&gt;&lt;br&gt;
 &lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/omv-docker-2.48vygos3biw0.webp&#34;&gt;&lt;br&gt;
@@ -163,33 +163,9 @@ WantedBy=multi-user.target
  然后这里采用 &lt;code&gt;portainer&lt;/code&gt;  安装：&lt;br&gt;
 &lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/jellyfin-install.4wgpta3l9uw0.webp&#34;&gt;&lt;br&gt;
 然后参考&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9qZWxseWZpbi5vcmcvZG9jcy9nZW5lcmFsL2FkbWluaXN0cmF0aW9uL2luc3RhbGxpbmcuaHRtbA==&#34;&gt;Jellyfin 官网&lt;/span&gt;在 &lt;code&gt;docker compose file&lt;/code&gt;  中填入：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;version: &amp;quot;3.5&amp;quot;
-services:
-  jellyfin:
-    image: nyanmisaka/jellyfin:latest   #使用中国特供版镜像
-    container_name: jellyfin
-    environment:
-      - PUID=1000
-      - PGID=100
-      - TZ=Asia/Shanghai    #时区使用Asia/Shanghai
-      - JELLYFIN_PublishedServerUrl=192.168.0.5 #optional
-    volumes:    #修改磁盘映射
-      - /path/to/config:/config #对应配置文件
-      - /path/to/cache:/cache   #对应缓存
-      - /path/to/media:/media   #对应媒体文件
-      - /path/to/media2:/media2:ro
-    ports:
-      - 8096:8096 #webUI端口
-      - 8920:8920 #optional
-      - 7359:7359/udp #optional
-      - 1900:1900/udp #optional
-    devices:
-      - /dev/dri:/dev/dri   #Intel集显驱动
-    restart: unless-stopped
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;填写完成后点击 &lt;code&gt;Deploy the stack&lt;/code&gt;  即可。&lt;br&gt;
+&lt;figure class=&#34;highlight raw&#34;&gt;&lt;figcaption data-lang=&#34;&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;version: &amp;quot;3.5&amp;quot;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;services:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  jellyfin:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    image: nyanmisaka&amp;#x2F;jellyfin:latest   #使用中国特供版镜像&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    container_name: jellyfin&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    environment:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      - PUID&amp;#x3D;1000&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      - PGID&amp;#x3D;100&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      - TZ&amp;#x3D;Asia&amp;#x2F;Shanghai    #时区使用 Asia&amp;#x2F;Shanghai&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      - JELLYFIN_PublishedServerUrl&amp;#x3D;192.168.0.5 #optional&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    volumes:    #修改磁盘映射&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      - &amp;#x2F;path&amp;#x2F;to&amp;#x2F;config:&amp;#x2F;config #对应配置文件&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      - &amp;#x2F;path&amp;#x2F;to&amp;#x2F;cache:&amp;#x2F;cache   #对应缓存&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      - &amp;#x2F;path&amp;#x2F;to&amp;#x2F;media:&amp;#x2F;media   #对应媒体文件&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      - &amp;#x2F;path&amp;#x2F;to&amp;#x2F;media2:&amp;#x2F;media2:ro&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    ports:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      - 8096:8096 #webUI 端口&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      - 8920:8920 #optional&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      - 7359:7359&amp;#x2F;udp #optional&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      - 1900:1900&amp;#x2F;udp #optional&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    devices:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;22&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      - &amp;#x2F;dev&amp;#x2F;dri:&amp;#x2F;dev&amp;#x2F;dri   #Intel 集显驱动&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;23&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    restart: unless-stopped&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;填写完成后点击 &lt;code&gt;Deploy the stack&lt;/code&gt;  即可。&lt;br&gt;
 之后访问 &lt;code&gt;本地地址:8096&lt;/code&gt;  端口，成功部署运行会进入 jellyfin 登录界面。&lt;/p&gt;
-&lt;h3 id=&#34;设置jellyfin&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#设置jellyfin&#34;&gt;#&lt;/a&gt; 设置 jellyfin&lt;/h3&gt;
+&lt;h3 id=&#34;设置-jellyfin&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#设置-jellyfin&#34;&gt;#&lt;/a&gt; 设置 jellyfin&lt;/h3&gt;
 &lt;p&gt;进入 web 页面设置其实没什么好记录的，基本上按照顺序把媒体库设置好就可以了。&lt;br&gt;
 硬件转码在&lt;em&gt;控制台 - 播放&lt;/em&gt;中开启。&lt;br&gt;
 &lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/jellyfin-set.ejnbskcbgvc.webp&#34;&gt;&lt;br&gt;
@@ -198,22 +174,7 @@ services:
 如路人女主是两季 TV + 剧场版，两季 TV 中各有一集 OVA。但是查询 themoviedb 发现 ova 剧集是单独放在特别篇中的：&lt;br&gt;
 &lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/jellyfin-metadata01.4xd0h5aq6lq0.webp&#34;&gt;&lt;br&gt;
 因此两季的 ova 应该被单独拿出来放在 &lt;code&gt;S00&lt;/code&gt;  文件夹中，文件目录应该如下：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;动画
-└── 路人女主的养成方法
-    ├── S00
-    │   ├── S00E01.mkv #第一季ova
-    │   └── S00E02.mkv #第二季ova
-    ├── S01
-    │   ├── S01E01.mkv
-    │   ├── S01E02.mkv
-    │   ├── S01E03.mkv
-    │   └── ...
-    └── S02
-        ├── S02E01.mkv
-        └── S02E02.mkv
-        └── ...
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;正确识别搜刮的元数据如下：&lt;br&gt;
+&lt;figure class=&#34;highlight raw&#34;&gt;&lt;figcaption data-lang=&#34;&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;动画&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;└── 路人女主的养成方法&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    ├── S00&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    │   ├── S00E01.mkv #第一季 ova&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    │   └── S00E02.mkv #第二季 ova&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    ├── S01&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    │   ├── S01E01.mkv&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    │   ├── S01E02.mkv&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    │   ├── S01E03.mkv&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    │   └── ...&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    └── S02&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        ├── S02E01.mkv&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        └── S02E02.mkv&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        └── ...&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;正确识别搜刮的元数据如下：&lt;br&gt;
 &lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/jellyfin-metadata02.50j4sdsl9280.webp&#34;&gt;&lt;br&gt;
 &lt;img data-src=&#34;https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/jellyfin-metadata03.7gbfm29jmkc0.webp&#34;&gt;&lt;/p&gt;
 &lt;p&gt;插件上除了使用官方的插件库外还有如下几个：&lt;/p&gt;

@@ -7,18 +7,18 @@
         <language>zh-CN</language>
         <pubDate>Sat, 12 Nov 2022 16:10:35 +0800</pubDate>
         <lastBuildDate>Sat, 12 Nov 2022 16:10:35 +0800</lastBuildDate>
-        <category>omv</category>
-        <category>jellyfin</category>
-        <category>hexo</category>
         <category>读书笔记</category>
         <category>费曼学习法</category>
+        <category>hexo</category>
         <category>前端</category>
         <category>JavaScript</category>
+        <category>omv</category>
+        <category>jellyfin</category>
         <category>BOM</category>
         <category>DOM</category>
         <category>CSS</category>
-        <category>HTML</category>
         <category>Vue</category>
+        <category>HTML</category>
         <item>
             <guid isPermalink="true">https://www.umi.homes/posts/c8f1/</guid>
             <title>事件初步</title>

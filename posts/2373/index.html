@@ -77,7 +77,7 @@ OMV+Jellyfin 打造个人影视库 - 折腾 |
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>6.3k</span>
+    <span>6.4k</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -167,15 +167,15 @@ OMV+Jellyfin 打造个人影视库 - 折腾 |
   <div class="body md" itemprop="articleBody">
     
 
-    <h2 id="关于nas"><a class="markdownIt-Anchor" href="#关于nas">#</a> 关于 nas</h2>
+    <h2 id="关于-nas"><a class="markdownIt-Anchor" href="#关于-nas">#</a> 关于 nas</h2>
 <p>NAS，全称 Network Attached Storage，翻译过来即为网络附属存储。简单来讲的话可以把它当作一个私人云盘来使用。<br>
 NAS 被定义为是一个以数据存储为中心的服务器，它首先具有数据集中存储和集中管理的功能，在这之上，它也可以做为一个私人专属的小服务器使用，实现诸如下载播放、家庭影院、软路由、虚拟机等功能。</p>
-<h3 id="为什么要入手nas"><a class="markdownIt-Anchor" href="#为什么要入手nas">#</a> 为什么要入手 nas</h3>
+<h3 id="为什么要入手-nas"><a class="markdownIt-Anchor" href="#为什么要入手-nas">#</a> 为什么要入手 nas</h3>
 <p><s>当然是吃饱了没事干瞎折腾。</s><br>
 虽然但是每个人对 nas 的理解和需求都不一样，对我个人来讲主要是更换了笔记本电脑后释放存储空间的需要和考虑搭建个人影视库的方便，另外则是对于网盘的不信任（<i>谁知道存在网盘里面的内容哪天就会打不开了呢？而百度的下载限速……emmm</i>）。<br>
 对于爱折腾的人来说，折腾 nas 的这个过程本身也可以是很有趣的，尤其是花费时间和精力后，实现了自己想要的功能后的满足感。</p>
 <h3 id="成品机-or-diy"><a class="markdownIt-Anchor" href="#成品机-or-diy">#</a> 成品机 or DIY？</h3>
-<h4 id="成品nas"><a class="markdownIt-Anchor" href="#成品nas">#</a> 成品 nas</h4>
+<h4 id="成品-nas"><a class="markdownIt-Anchor" href="#成品-nas">#</a> 成品 nas</h4>
 <p>家用 nas 目前市面上其实已经有很多成熟的产品供人选择，且不说大家耳熟能详的群晖和威联通，新的产品还有万由云、极空间、绿联云等等，像是海康、联想、华为等厂商也推出了私人云产品。<br>
 成熟的 nas 产品，不仅是简单方便开箱即用，而且它们的功能和 app 适配也相对完善，售后服务等更是进一步提升了保障，省心省力。<br>
 当然，成品 nas 的缺点也很明显：一个是价格稍贵，另一个就是硬件上没有太多选择。像是<span class="exturl" data-url="aHR0cHM6Ly9pdGVtLmpkLmNvbS8xMDAwMTUwODc0MzEuaHRtbCNwcm9kdWN0LWRldGFpbA==">群晖最入门的双盘位 DS220j</span>，京东目前售价在 1400 元，<span class="exturl" data-url="aHR0cHM6Ly9pdGVtLmpkLmNvbS8xMDAwMTQxODcyODYuaHRtbCNwcm9kdWN0LWRldGFpbA==">支持 Docker 的 DS220+</span>则翻了一倍的价格，近 2800 元，而它的配置仅仅才是 J4025+2GB DDR4，也难怪大家常说成品 nas 是 “买软件送硬件”。</p>
@@ -241,8 +241,8 @@ NAS 被定义为是一个以数据存储为中心的服务器，它首先具有�
 为了方便管理，最好从<em>用户 - 用户</em>，新建一个用户使用共享文件。<br>
 <img data-src="https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/omv-user.33neyiypd0i0.webp"><br>
 最后，在自己电脑上将共享文件夹添加上去，就可以使用 omv 的共享文件夹了。</p>
-<h3 id="安装clash"><a class="markdownIt-Anchor" href="#安装clash">#</a> 安装 Clash</h3>
-<h4 id="配置clash"><a class="markdownIt-Anchor" href="#配置clash">#</a> 配置 Clash</h4>
+<h3 id="安装-clash"><a class="markdownIt-Anchor" href="#安装-clash">#</a> 安装 Clash</h3>
+<h4 id="配置-clash"><a class="markdownIt-Anchor" href="#配置-clash">#</a> 配置 Clash</h4>
 <p>在 Clash <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0RyZWFtYWNyby9jbGFzaC9yZWxlYXNlcw==">release</span>页面下载对应版本，例如 <code>clash-linux-amd64-v3-v1.11.8.gz</code> :<br>
  <code># wget https://github.com/Dreamacro/clash/releases/download/v1.11.8/clash-linux-amd64-v3-v1.11.8.gz</code> <br>
  然后解压缩并重命名为 <code>clash</code> ，添加可执行权限</p>
@@ -264,18 +264,18 @@ ExecStart=/usr/local/bin/clash -d /etc/clash
 WantedBy=multi-user.target
 </code></pre>
 <p>使用 systemctl 开启 clash</p>
-<figure class="highlight shell"><figcaption data-lang="Bash"></figcaption><table><tr><td data-num="1"></td><td><pre>systemctl <span class="token builtin class-name">enable</span> clash      <span class="token comment">#clash 开机自启动</span></pre></td></tr><tr><td data-num="2"></td><td><pre>systemctl start clash       <span class="token comment">#开启 clash</span></pre></td></tr><tr><td data-num="3"></td><td><pre>systemctl status clash      <span class="token comment">#查看 clash 日志</span></pre></td></tr><tr><td data-num="4"></td><td><pre>journalctl <span class="token parameter variable">-xe</span></pre></td></tr></table></figure><h4 id="使用webui"><a class="markdownIt-Anchor" href="#使用webui">#</a> 使用 webUI</h4>
+<figure class="highlight shell"><figcaption data-lang="Bash"></figcaption><table><tr><td data-num="1"></td><td><pre>systemctl <span class="token builtin class-name">enable</span> clash      <span class="token comment">#clash 开机自启动</span></pre></td></tr><tr><td data-num="2"></td><td><pre>systemctl start clash       <span class="token comment">#开启 clash</span></pre></td></tr><tr><td data-num="3"></td><td><pre>systemctl status clash      <span class="token comment">#查看 clash 日志</span></pre></td></tr><tr><td data-num="4"></td><td><pre>journalctl <span class="token parameter variable">-xe</span></pre></td></tr></table></figure><h4 id="使用-webui"><a class="markdownIt-Anchor" href="#使用-webui">#</a> 使用 webUI</h4>
 <p>如果要使用 webUI 进行管理，则将 clash dashboard 代码也克隆到 <code>/etc/clash</code>  目录<br>
  <code>git clone -b gh-pages --depth 1 https://github.com/Dreamacro/clash-dashboard /etc/clash/clash-dashboard </code> <br>
 同时修改 <code>config.yaml</code>  文件</p>
 <figure class="highlight shell"><figcaption data-lang="Bash"></figcaption><table><tr><td data-num="1"></td><td><pre>external-controller: <span class="token number">0.0</span>.0.0:9090       <span class="token comment">#修改 ip 地址和端口；</span></pre></td></tr><tr><td data-num="2"></td><td><pre>external-ui: /etc/clash/clash-dashboard     <span class="token comment">#clash-dashboard 的路径；</span></pre></td></tr><tr><td data-num="3"></td><td><pre>secret:<span class="token string">'123456'</span>     <span class="token comment">#连接的密钥，自行设置；</span></pre></td></tr></table></figure><p>完成后重启 clash： <code>systemctl restart clash </code> <br>
 之后访问 <code>本地地址:9090/ui</code> ，填写刚才设置的 host、端口和密钥即可。</p>
-<h3 id="omv其他设置"><a class="markdownIt-Anchor" href="#omv其他设置">#</a> omv 其他设置</h3>
+<h3 id="omv-其他设置"><a class="markdownIt-Anchor" href="#omv-其他设置">#</a> omv 其他设置</h3>
 <p>官方自带的插件可以在<em>系统 - 插件</em>中找到。<br>
 国内使用清华镜像源可以参考<span class="exturl" data-url="aHR0cHM6Ly9taXJyb3JzLnR1bmEudHNpbmdodWEuZWR1LmNuL2hlbHAvb3Blbm1lZGlhdmF1bHQv">官方设置</span>。</p>
-<h2 id="启用docker"><a class="markdownIt-Anchor" href="#启用docker">#</a> 启用 docker</h2>
+<h2 id="启用-docker"><a class="markdownIt-Anchor" href="#启用-docker">#</a> 启用 docker</h2>
 <p>当然，仅靠 omv 自带的功能和系统插件，能实现的效果还是不够，这就需要使用 docker 了。</p>
-<h3 id="安装omv-extras"><a class="markdownIt-Anchor" href="#安装omv-extras">#</a> 安装 omv-extras</h3>
+<h3 id="安装-omv-extras"><a class="markdownIt-Anchor" href="#安装-omv-extras">#</a> 安装 omv-extras</h3>
 <p>omv 要启用 docker 并在 web 端进行管理的话需要安装 omv-extras。<br>
 官网地址：<span class="exturl" data-url="aHR0cHM6Ly9mb3J1bS5vcGVubWVkaWF2YXVsdC5vcmcvaW5kZXgucGhwP3RocmVhZC81NTQ5LW9tdi1leHRyYXMtb3JnLXBsdWdpbi8=">https://forum.openmediavault.org/index.php?thread/5549-omv-extras-org-plugin/</span><br>
  清华大学源：<span class="exturl" data-url="aHR0cHM6Ly9taXJyb3JzLnR1bmEudHNpbmdodWEuZWR1LmNuL09wZW5NZWRpYVZhdWx0L29wZW5tZWRpYXZhdWx0LXBsdWdpbi1kZXZlbG9wZXJzL3Bvb2wvbWFpbi9vL29wZW5tZWRpYXZhdWx0LW9tdmV4dHJhc29yZy8=">https://mirrors.tuna.tsinghua.edu.cn/OpenMediaVault/openmediavault-plugin-developers/pool/main/o/openmediavault-omvextrasorg/</span><br>
@@ -290,7 +290,7 @@ WantedBy=multi-user.target
  <code>apt update &amp;&amp; apt upgrade</code> <br>
  然后刷新 omv 网页管理界面，已经有 omv-extras 选项了。<br>
 <img data-src="https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/omv-extras-2.3y09mp2chec0.webp"></p>
-<h3 id="安装docker"><a class="markdownIt-Anchor" href="#安装docker">#</a> 安装 docker</h3>
+<h3 id="安装-docker"><a class="markdownIt-Anchor" href="#安装-docker">#</a> 安装 docker</h3>
 <p>安装完成 omv-extras 可以直接在里面安装 docker 和 portainer，后者是一个可视化的 Docker 操作界面。<br>
 <img data-src="https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/omv-docker-1.1l29r4p899wg.webp"><br>
 <img data-src="https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/omv-docker-2.48vygos3biw0.webp"><br>
@@ -304,33 +304,9 @@ WantedBy=multi-user.target
  然后这里采用 <code>portainer</code>  安装：<br>
 <img data-src="https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/jellyfin-install.4wgpta3l9uw0.webp"><br>
 然后参考<span class="exturl" data-url="aHR0cHM6Ly9qZWxseWZpbi5vcmcvZG9jcy9nZW5lcmFsL2FkbWluaXN0cmF0aW9uL2luc3RhbGxpbmcuaHRtbA==">Jellyfin 官网</span>在 <code>docker compose file</code>  中填入：</p>
-<pre><code>version: &quot;3.5&quot;
-services:
-  jellyfin:
-    image: nyanmisaka/jellyfin:latest   #使用中国特供版镜像
-    container_name: jellyfin
-    environment:
-      - PUID=1000
-      - PGID=100
-      - TZ=Asia/Shanghai    #时区使用Asia/Shanghai
-      - JELLYFIN_PublishedServerUrl=192.168.0.5 #optional
-    volumes:    #修改磁盘映射
-      - /path/to/config:/config #对应配置文件
-      - /path/to/cache:/cache   #对应缓存
-      - /path/to/media:/media   #对应媒体文件
-      - /path/to/media2:/media2:ro
-    ports:
-      - 8096:8096 #webUI端口
-      - 8920:8920 #optional
-      - 7359:7359/udp #optional
-      - 1900:1900/udp #optional
-    devices:
-      - /dev/dri:/dev/dri   #Intel集显驱动
-    restart: unless-stopped
-</code></pre>
-<p>填写完成后点击 <code>Deploy the stack</code>  即可。<br>
+<figure class="highlight raw"><figcaption data-lang=""></figcaption><table><tr><td data-num="1"></td><td><pre>version: &quot;3.5&quot;</pre></td></tr><tr><td data-num="2"></td><td><pre>services:</pre></td></tr><tr><td data-num="3"></td><td><pre>  jellyfin:</pre></td></tr><tr><td data-num="4"></td><td><pre>    image: nyanmisaka&#x2F;jellyfin:latest   #使用中国特供版镜像</pre></td></tr><tr><td data-num="5"></td><td><pre>    container_name: jellyfin</pre></td></tr><tr><td data-num="6"></td><td><pre>    environment:</pre></td></tr><tr><td data-num="7"></td><td><pre>      - PUID&#x3D;1000</pre></td></tr><tr><td data-num="8"></td><td><pre>      - PGID&#x3D;100</pre></td></tr><tr><td data-num="9"></td><td><pre>      - TZ&#x3D;Asia&#x2F;Shanghai    #时区使用 Asia&#x2F;Shanghai</pre></td></tr><tr><td data-num="10"></td><td><pre>      - JELLYFIN_PublishedServerUrl&#x3D;192.168.0.5 #optional</pre></td></tr><tr><td data-num="11"></td><td><pre>    volumes:    #修改磁盘映射</pre></td></tr><tr><td data-num="12"></td><td><pre>      - &#x2F;path&#x2F;to&#x2F;config:&#x2F;config #对应配置文件</pre></td></tr><tr><td data-num="13"></td><td><pre>      - &#x2F;path&#x2F;to&#x2F;cache:&#x2F;cache   #对应缓存</pre></td></tr><tr><td data-num="14"></td><td><pre>      - &#x2F;path&#x2F;to&#x2F;media:&#x2F;media   #对应媒体文件</pre></td></tr><tr><td data-num="15"></td><td><pre>      - &#x2F;path&#x2F;to&#x2F;media2:&#x2F;media2:ro</pre></td></tr><tr><td data-num="16"></td><td><pre>    ports:</pre></td></tr><tr><td data-num="17"></td><td><pre>      - 8096:8096 #webUI 端口</pre></td></tr><tr><td data-num="18"></td><td><pre>      - 8920:8920 #optional</pre></td></tr><tr><td data-num="19"></td><td><pre>      - 7359:7359&#x2F;udp #optional</pre></td></tr><tr><td data-num="20"></td><td><pre>      - 1900:1900&#x2F;udp #optional</pre></td></tr><tr><td data-num="21"></td><td><pre>    devices:</pre></td></tr><tr><td data-num="22"></td><td><pre>      - &#x2F;dev&#x2F;dri:&#x2F;dev&#x2F;dri   #Intel 集显驱动</pre></td></tr><tr><td data-num="23"></td><td><pre>    restart: unless-stopped</pre></td></tr></table></figure><p>填写完成后点击 <code>Deploy the stack</code>  即可。<br>
 之后访问 <code>本地地址:8096</code>  端口，成功部署运行会进入 jellyfin 登录界面。</p>
-<h3 id="设置jellyfin"><a class="markdownIt-Anchor" href="#设置jellyfin">#</a> 设置 jellyfin</h3>
+<h3 id="设置-jellyfin"><a class="markdownIt-Anchor" href="#设置-jellyfin">#</a> 设置 jellyfin</h3>
 <p>进入 web 页面设置其实没什么好记录的，基本上按照顺序把媒体库设置好就可以了。<br>
 硬件转码在<em>控制台 - 播放</em>中开启。<br>
 <img data-src="https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/jellyfin-set.ejnbskcbgvc.webp"><br>
@@ -339,22 +315,7 @@ services:
 如路人女主是两季 TV + 剧场版，两季 TV 中各有一集 OVA。但是查询 themoviedb 发现 ova 剧集是单独放在特别篇中的：<br>
 <img data-src="https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/jellyfin-metadata01.4xd0h5aq6lq0.webp"><br>
 因此两季的 ova 应该被单独拿出来放在 <code>S00</code>  文件夹中，文件目录应该如下：</p>
-<pre><code>动画
-└── 路人女主的养成方法
-    ├── S00
-    │   ├── S00E01.mkv #第一季ova
-    │   └── S00E02.mkv #第二季ova
-    ├── S01
-    │   ├── S01E01.mkv
-    │   ├── S01E02.mkv
-    │   ├── S01E03.mkv
-    │   └── ...
-    └── S02
-        ├── S02E01.mkv
-        └── S02E02.mkv
-        └── ...
-</code></pre>
-<p>正确识别搜刮的元数据如下：<br>
+<figure class="highlight raw"><figcaption data-lang=""></figcaption><table><tr><td data-num="1"></td><td><pre>动画</pre></td></tr><tr><td data-num="2"></td><td><pre>└── 路人女主的养成方法</pre></td></tr><tr><td data-num="3"></td><td><pre>    ├── S00</pre></td></tr><tr><td data-num="4"></td><td><pre>    │   ├── S00E01.mkv #第一季 ova</pre></td></tr><tr><td data-num="5"></td><td><pre>    │   └── S00E02.mkv #第二季 ova</pre></td></tr><tr><td data-num="6"></td><td><pre>    ├── S01</pre></td></tr><tr><td data-num="7"></td><td><pre>    │   ├── S01E01.mkv</pre></td></tr><tr><td data-num="8"></td><td><pre>    │   ├── S01E02.mkv</pre></td></tr><tr><td data-num="9"></td><td><pre>    │   ├── S01E03.mkv</pre></td></tr><tr><td data-num="10"></td><td><pre>    │   └── ...</pre></td></tr><tr><td data-num="11"></td><td><pre>    └── S02</pre></td></tr><tr><td data-num="12"></td><td><pre>        ├── S02E01.mkv</pre></td></tr><tr><td data-num="13"></td><td><pre>        └── S02E02.mkv</pre></td></tr><tr><td data-num="14"></td><td><pre>        └── ...</pre></td></tr></table></figure><p>正确识别搜刮的元数据如下：<br>
 <img data-src="https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/jellyfin-metadata02.50j4sdsl9280.webp"><br>
 <img data-src="https://cdn.staticaly.com/gh/umitsurumi/image-hosting@master/blog-images/other_note/jellyfin-metadata03.7gbfm29jmkc0.webp"></p>
 <p>插件上除了使用官方的插件库外还有如下几个：</p>
@@ -389,7 +350,7 @@ https://raw.githubusercontent.com/danieladov/JellyfinPluginManifest/master/manif
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">更新于</span>
-    <time title="修改时间：2022-10-31 21:42:16" itemprop="dateModified" datetime="2022-10-31T21:42:16+08:00">2022-10-31</time>
+    <time title="修改时间：2023-02-11 00:11:53" itemprop="dateModified" datetime="2023-02-11T00:11:53+08:00">2023-02-11</time>
   </span>
 </div>
 
@@ -445,7 +406,7 @@ https://raw.githubusercontent.com/danieladov/JellyfinPluginManifest/master/manif
     <script src="https://cdn.staticfile.org/twikoo/1.6.9/twikoo.all.min.js"></script>
       <script data-pjax>
       twikoo.init({
-      envId: "https://twikoo-ghk8qll4q-umitsurumi.vercel.app/", // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+      envId: "https://twikoo.umi.homes", // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
       el: '#tcomments', // 容器元素
       //region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
       //path: 'window.location.pathname', // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
@@ -463,7 +424,7 @@ https://raw.githubusercontent.com/danieladov/JellyfinPluginManifest/master/manif
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8Enas"><span class="toc-number">1.</span> <span class="toc-text"> 关于 nas</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%85%A5%E6%89%8Bnas"><span class="toc-number">1.1.</span> <span class="toc-text"> 为什么要入手 nas</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%88%90%E5%93%81%E6%9C%BA-or-diy"><span class="toc-number">1.2.</span> <span class="toc-text"> 成品机 or DIY？</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%88%90%E5%93%81nas"><span class="toc-number">1.2.1.</span> <span class="toc-text"> 成品 nas</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#diy"><span class="toc-number">1.2.2.</span> <span class="toc-text"> DIY</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%AA%E4%BA%BA%E6%96%B9%E6%A1%88"><span class="toc-number">1.3.</span> <span class="toc-text"> 个人方案</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E4%B8%8E%E8%AE%BE%E7%BD%AE"><span class="toc-number">2.</span> <span class="toc-text"> 系统安装与设置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%AF%E5%8A%A8%E7%9B%98%E5%88%B6%E4%BD%9C"><span class="toc-number">2.1.</span> <span class="toc-text"> 启动盘制作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E6%B5%81%E7%A8%8B"><span class="toc-number">2.2.</span> <span class="toc-text"> 安装流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="toc-number">2.3.</span> <span class="toc-text"> 设置共享文件夹</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85clash"><span class="toc-number">2.4.</span> <span class="toc-text"> 安装 Clash</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEclash"><span class="toc-number">2.4.1.</span> <span class="toc-text"> 配置 Clash</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8"><span class="toc-number">2.4.2.</span> <span class="toc-text"> 配置开机启动</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8webui"><span class="toc-number">2.4.3.</span> <span class="toc-text"> 使用 webUI</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#omv%E5%85%B6%E4%BB%96%E8%AE%BE%E7%BD%AE"><span class="toc-number">2.5.</span> <span class="toc-text"> omv 其他设置</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%AF%E7%94%A8docker"><span class="toc-number">3.</span> <span class="toc-text"> 启用 docker</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85omv-extras"><span class="toc-number">3.1.</span> <span class="toc-text"> 安装 omv-extras</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85docker"><span class="toc-number">3.2.</span> <span class="toc-text"> 安装 docker</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jellyfin"><span class="toc-number">4.</span> <span class="toc-text"> Jellyfin</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C%E5%AE%B9%E5%99%A8"><span class="toc-number">4.1.</span> <span class="toc-text"> 运行容器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AEjellyfin"><span class="toc-number">4.2.</span> <span class="toc-text"> 设置 jellyfin</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83"><span class="toc-number">5.</span> <span class="toc-text"> 参考</span></a></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E-nas"><span class="toc-number">1.</span> <span class="toc-text"> 关于 nas</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%85%A5%E6%89%8B-nas"><span class="toc-number">1.1.</span> <span class="toc-text"> 为什么要入手 nas</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%88%90%E5%93%81%E6%9C%BA-or-diy"><span class="toc-number">1.2.</span> <span class="toc-text"> 成品机 or DIY？</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%88%90%E5%93%81-nas"><span class="toc-number">1.2.1.</span> <span class="toc-text"> 成品 nas</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#diy"><span class="toc-number">1.2.2.</span> <span class="toc-text"> DIY</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%AA%E4%BA%BA%E6%96%B9%E6%A1%88"><span class="toc-number">1.3.</span> <span class="toc-text"> 个人方案</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E4%B8%8E%E8%AE%BE%E7%BD%AE"><span class="toc-number">2.</span> <span class="toc-text"> 系统安装与设置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%AF%E5%8A%A8%E7%9B%98%E5%88%B6%E4%BD%9C"><span class="toc-number">2.1.</span> <span class="toc-text"> 启动盘制作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E6%B5%81%E7%A8%8B"><span class="toc-number">2.2.</span> <span class="toc-text"> 安装流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="toc-number">2.3.</span> <span class="toc-text"> 设置共享文件夹</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85-clash"><span class="toc-number">2.4.</span> <span class="toc-text"> 安装 Clash</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE-clash"><span class="toc-number">2.4.1.</span> <span class="toc-text"> 配置 Clash</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8"><span class="toc-number">2.4.2.</span> <span class="toc-text"> 配置开机启动</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8-webui"><span class="toc-number">2.4.3.</span> <span class="toc-text"> 使用 webUI</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#omv-%E5%85%B6%E4%BB%96%E8%AE%BE%E7%BD%AE"><span class="toc-number">2.5.</span> <span class="toc-text"> omv 其他设置</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%AF%E7%94%A8-docker"><span class="toc-number">3.</span> <span class="toc-text"> 启用 docker</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85-omv-extras"><span class="toc-number">3.1.</span> <span class="toc-text"> 安装 omv-extras</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85-docker"><span class="toc-number">3.2.</span> <span class="toc-text"> 安装 docker</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jellyfin"><span class="toc-number">4.</span> <span class="toc-text"> Jellyfin</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C%E5%AE%B9%E5%99%A8"><span class="toc-number">4.1.</span> <span class="toc-text"> 运行容器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE-jellyfin"><span class="toc-number">4.2.</span> <span class="toc-text"> 设置 jellyfin</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83"><span class="toc-number">5.</span> <span class="toc-text"> 参考</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
