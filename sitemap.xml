@@ -234,13 +234,6 @@
   </url>
   
   <url>
-    <loc>https://www.umi.homes/tags/LeetCode/</loc>
-    <lastmod>2023-02-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.umi.homes/tags/omv/</loc>
     <lastmod>2023-02-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -255,14 +248,7 @@
   </url>
   
   <url>
-    <loc>https://www.umi.homes/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/</loc>
-    <lastmod>2023-02-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.umi.homes/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
+    <loc>https://www.umi.homes/tags/LeetCode/</loc>
     <lastmod>2023-02-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -277,6 +263,20 @@
   
   <url>
     <loc>https://www.umi.homes/tags/%E8%B4%B9%E6%9B%BC%E5%AD%A6%E4%B9%A0%E6%B3%95/</loc>
+    <lastmod>2023-02-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.umi.homes/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/</loc>
+    <lastmod>2023-02-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.umi.homes/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
     <lastmod>2023-02-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -311,14 +311,14 @@
   </url>
   
   <url>
-    <loc>https://www.umi.homes/tags/CSS/</loc>
+    <loc>https://www.umi.homes/tags/Vue/</loc>
     <lastmod>2023-02-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.umi.homes/tags/Vue/</loc>
+    <loc>https://www.umi.homes/tags/CSS/</loc>
     <lastmod>2023-02-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -348,14 +348,14 @@
   </url>
   
   <url>
-    <loc>https://www.umi.homes/categories/computer-basis/</loc>
+    <loc>https://www.umi.homes/categories/reading/</loc>
     <lastmod>2023-02-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.umi.homes/categories/reading/</loc>
+    <loc>https://www.umi.homes/categories/computer-basis/</loc>
     <lastmod>2023-02-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
