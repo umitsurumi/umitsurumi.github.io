@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.umi.homes/friends/index.html</loc>
+    
+    <lastmod>2023-02-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.umi.homes/tags/index.html</loc>
+    
+    <lastmod>2023-02-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.umi.homes/posts/58410/</loc>
     
     <lastmod>2023-02-13</lastmod>
@@ -39,6 +57,51 @@
   
   <url>
     <loc>https://www.umi.homes/posts/3de/</loc>
+    
+    <lastmod>2023-02-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.umi.homes/posts/cb89/</loc>
+    
+    <lastmod>2023-02-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.umi.homes/posts/d64e/</loc>
+    
+    <lastmod>2023-02-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.umi.homes/posts/c9b1/</loc>
+    
+    <lastmod>2023-02-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.umi.homes/posts/c8f1/</loc>
+    
+    <lastmod>2023-02-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.umi.homes/posts/28818/</loc>
     
     <lastmod>2023-02-13</lastmod>
     
@@ -174,69 +237,6 @@
   
   <url>
     <loc>https://www.umi.homes/favorites/index.html</loc>
-    
-    <lastmod>2023-02-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.umi.homes/friends/index.html</loc>
-    
-    <lastmod>2023-02-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.umi.homes/tags/index.html</loc>
-    
-    <lastmod>2023-02-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.umi.homes/posts/cb89/</loc>
-    
-    <lastmod>2023-02-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.umi.homes/posts/d64e/</loc>
-    
-    <lastmod>2023-02-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.umi.homes/posts/c9b1/</loc>
-    
-    <lastmod>2023-02-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.umi.homes/posts/c8f1/</loc>
-    
-    <lastmod>2023-02-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.umi.homes/posts/28818/</loc>
     
     <lastmod>2023-02-13</lastmod>
     
