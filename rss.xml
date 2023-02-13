@@ -22,7 +22,7 @@
             <guid isPermalink="true">https://www.umi.homes/posts/d56/</guid>
             <title>LeetCode-2-两数相加</title>
             <link>https://www.umi.homes/posts/d56/</link>
-            <category term="LeetCode" scheme="https://www.umi.homes/categories/LeetCode/" />
+            <category term="LeetCode" scheme="https://www.umi.homes/categories/leetcode/" />
             <category term="LeetCode" scheme="https://www.umi.homes/tags/LeetCode/" />
             <pubDate>Wed, 01 Feb 2023 16:00:00 +0000</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;两数相加&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#两数相加&#34;&gt;#&lt;/a&gt; 两数相加&lt;/h1&gt;
@@ -87,7 +87,7 @@ num.forEach((n) =&amp;gt; &amp;#123;
             <guid isPermalink="true">https://www.umi.homes/posts/a53b/</guid>
             <title>LeetCode-1-两数之和</title>
             <link>https://www.umi.homes/posts/a53b/</link>
-            <category term="LeetCode" scheme="https://www.umi.homes/categories/LeetCode/" />
+            <category term="LeetCode" scheme="https://www.umi.homes/categories/leetcode/" />
             <category term="LeetCode" scheme="https://www.umi.homes/tags/LeetCode/" />
             <pubDate>Tue, 31 Jan 2023 16:00:00 +0000</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;两数之和&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#两数之和&#34;&gt;#&lt;/a&gt; 两数之和&lt;/h1&gt;
