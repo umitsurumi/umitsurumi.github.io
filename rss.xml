@@ -917,8 +917,8 @@ id3--prior--&gt;id2--prior--&gt;id1--prior--&gt;id3&lt;/pre&gt;
             <guid isPermalink="true">https://www.umi.homes/posts/c8f1/</guid>
             <title>事件初步</title>
             <link>https://www.umi.homes/posts/c8f1/</link>
-            <category term="前端学习" scheme="https://www.umi.homes/categories/front-end/" />
-            <category term="前端基础" scheme="https://www.umi.homes/categories/front-end/front-end-basis/" />
+            <category term="编程学习" scheme="https://www.umi.homes/categories/coding/" />
+            <category term="前端基础" scheme="https://www.umi.homes/categories/coding/front-end-basis/" />
             <category term="前端" scheme="https://www.umi.homes/tags/%E5%89%8D%E7%AB%AF/" />
             <category term="JavaScript" scheme="https://www.umi.homes/tags/JavaScript/" />
             <category term="BOM" scheme="https://www.umi.homes/tags/BOM/" />
@@ -1236,8 +1236,8 @@ DOM 事件标准中，事件传播有三个阶段，捕获阶段 - 目标阶段 
             <guid isPermalink="true">https://www.umi.homes/posts/c9b1/</guid>
             <title>浏览器环境，Document</title>
             <link>https://www.umi.homes/posts/c9b1/</link>
-            <category term="前端学习" scheme="https://www.umi.homes/categories/front-end/" />
-            <category term="前端基础" scheme="https://www.umi.homes/categories/front-end/front-end-basis/" />
+            <category term="编程学习" scheme="https://www.umi.homes/categories/coding/" />
+            <category term="前端基础" scheme="https://www.umi.homes/categories/coding/front-end-basis/" />
             <category term="前端" scheme="https://www.umi.homes/tags/%E5%89%8D%E7%AB%AF/" />
             <category term="JavaScript" scheme="https://www.umi.homes/tags/JavaScript/" />
             <category term="BOM" scheme="https://www.umi.homes/tags/BOM/" />
@@ -1566,8 +1566,8 @@ Node --&gt; EventTarget&lt;/pre&gt;
             <guid isPermalink="true">https://www.umi.homes/posts/390000/</guid>
             <title>JavaScript函数深入</title>
             <link>https://www.umi.homes/posts/390000/</link>
-            <category term="前端学习" scheme="https://www.umi.homes/categories/front-end/" />
-            <category term="前端基础" scheme="https://www.umi.homes/categories/front-end/front-end-basis/" />
+            <category term="编程学习" scheme="https://www.umi.homes/categories/coding/" />
+            <category term="前端基础" scheme="https://www.umi.homes/categories/coding/front-end-basis/" />
             <category term="前端" scheme="https://www.umi.homes/tags/%E5%89%8D%E7%AB%AF/" />
             <category term="JavaScript" scheme="https://www.umi.homes/tags/JavaScript/" />
             <pubDate>Wed, 09 Nov 2022 08:10:35 +0000</pubDate>
@@ -1800,8 +1800,8 @@ this绑定和箭头函数
             <guid isPermalink="true">https://www.umi.homes/posts/3b64/</guid>
             <title>JavaScript对象、原型与类</title>
             <link>https://www.umi.homes/posts/3b64/</link>
-            <category term="前端学习" scheme="https://www.umi.homes/categories/front-end/" />
-            <category term="前端基础" scheme="https://www.umi.homes/categories/front-end/front-end-basis/" />
+            <category term="编程学习" scheme="https://www.umi.homes/categories/coding/" />
+            <category term="前端基础" scheme="https://www.umi.homes/categories/coding/front-end-basis/" />
             <category term="前端" scheme="https://www.umi.homes/tags/%E5%89%8D%E7%AB%AF/" />
             <category term="JavaScript" scheme="https://www.umi.homes/tags/JavaScript/" />
             <pubDate>Sun, 06 Nov 2022 08:10:35 +0000</pubDate>
@@ -1965,8 +1965,8 @@ this绑定和箭头函数
             <guid isPermalink="true">https://www.umi.homes/posts/fba5/</guid>
             <title>JavaScript原始类型与引用类型</title>
             <link>https://www.umi.homes/posts/fba5/</link>
-            <category term="前端学习" scheme="https://www.umi.homes/categories/front-end/" />
-            <category term="前端基础" scheme="https://www.umi.homes/categories/front-end/front-end-basis/" />
+            <category term="编程学习" scheme="https://www.umi.homes/categories/coding/" />
+            <category term="前端基础" scheme="https://www.umi.homes/categories/coding/front-end-basis/" />
             <category term="前端" scheme="https://www.umi.homes/tags/%E5%89%8D%E7%AB%AF/" />
             <category term="JavaScript" scheme="https://www.umi.homes/tags/JavaScript/" />
             <pubDate>Wed, 02 Nov 2022 08:10:35 +0000</pubDate>
@@ -2376,8 +2376,8 @@ this绑定和箭头函数
             <guid isPermalink="true">https://www.umi.homes/posts/28818/</guid>
             <title>JavaScript语言基础</title>
             <link>https://www.umi.homes/posts/28818/</link>
-            <category term="前端学习" scheme="https://www.umi.homes/categories/front-end/" />
-            <category term="前端基础" scheme="https://www.umi.homes/categories/front-end/front-end-basis/" />
+            <category term="编程学习" scheme="https://www.umi.homes/categories/coding/" />
+            <category term="前端基础" scheme="https://www.umi.homes/categories/coding/front-end-basis/" />
             <category term="前端" scheme="https://www.umi.homes/tags/%E5%89%8D%E7%AB%AF/" />
             <category term="JavaScript" scheme="https://www.umi.homes/tags/JavaScript/" />
             <pubDate>Tue, 01 Nov 2022 08:10:35 +0000</pubDate>
@@ -2542,8 +2542,8 @@ Object 类型代表了一组数据和功能的集合。&lt;/p&gt;
             <guid isPermalink="true">https://www.umi.homes/posts/15489/</guid>
             <title>响应式布局基础</title>
             <link>https://www.umi.homes/posts/15489/</link>
-            <category term="前端学习" scheme="https://www.umi.homes/categories/front-end/" />
-            <category term="前端基础" scheme="https://www.umi.homes/categories/front-end/front-end-basis/" />
+            <category term="编程学习" scheme="https://www.umi.homes/categories/coding/" />
+            <category term="前端基础" scheme="https://www.umi.homes/categories/coding/front-end-basis/" />
             <category term="前端" scheme="https://www.umi.homes/tags/%E5%89%8D%E7%AB%AF/" />
             <category term="CSS" scheme="https://www.umi.homes/tags/CSS/" />
             <pubDate>Sun, 23 Oct 2022 16:00:00 +0000</pubDate>
@@ -2623,8 +2623,8 @@ Object 类型代表了一组数据和功能的集合。&lt;/p&gt;
             <guid isPermalink="true">https://www.umi.homes/posts/63325/</guid>
             <title>CSS常用布局</title>
             <link>https://www.umi.homes/posts/63325/</link>
-            <category term="前端学习" scheme="https://www.umi.homes/categories/front-end/" />
-            <category term="前端基础" scheme="https://www.umi.homes/categories/front-end/front-end-basis/" />
+            <category term="编程学习" scheme="https://www.umi.homes/categories/coding/" />
+            <category term="前端基础" scheme="https://www.umi.homes/categories/coding/front-end-basis/" />
             <category term="前端" scheme="https://www.umi.homes/tags/%E5%89%8D%E7%AB%AF/" />
             <category term="CSS" scheme="https://www.umi.homes/tags/CSS/" />
             <pubDate>Sat, 22 Oct 2022 16:00:00 +0000</pubDate>
@@ -2954,8 +2954,8 @@ Flex 布局是轴线布局，可以看作是&lt;em&gt;一维布局&lt;/em&gt;。
             <guid isPermalink="true">https://www.umi.homes/posts/13596/</guid>
             <title>CSS3新特性</title>
             <link>https://www.umi.homes/posts/13596/</link>
-            <category term="前端学习" scheme="https://www.umi.homes/categories/front-end/" />
-            <category term="前端基础" scheme="https://www.umi.homes/categories/front-end/front-end-basis/" />
+            <category term="编程学习" scheme="https://www.umi.homes/categories/coding/" />
+            <category term="前端基础" scheme="https://www.umi.homes/categories/coding/front-end-basis/" />
             <category term="前端" scheme="https://www.umi.homes/tags/%E5%89%8D%E7%AB%AF/" />
             <category term="CSS" scheme="https://www.umi.homes/tags/CSS/" />
             <pubDate>Thu, 20 Oct 2022 16:00:00 +0000</pubDate>
@@ -3328,8 +3328,8 @@ section div:nth-child(6) {
             <guid isPermalink="true">https://www.umi.homes/posts/62941/</guid>
             <title>CSS简单技巧</title>
             <link>https://www.umi.homes/posts/62941/</link>
-            <category term="前端学习" scheme="https://www.umi.homes/categories/front-end/" />
-            <category term="前端基础" scheme="https://www.umi.homes/categories/front-end/front-end-basis/" />
+            <category term="编程学习" scheme="https://www.umi.homes/categories/coding/" />
+            <category term="前端基础" scheme="https://www.umi.homes/categories/coding/front-end-basis/" />
             <category term="前端" scheme="https://www.umi.homes/tags/%E5%89%8D%E7%AB%AF/" />
             <category term="CSS" scheme="https://www.umi.homes/tags/CSS/" />
             <pubDate>Tue, 18 Oct 2022 16:00:00 +0000</pubDate>
@@ -3564,8 +3564,8 @@ section div:nth-child(6) {
             <guid isPermalink="true">https://www.umi.homes/posts/62621/</guid>
             <title>CSS基础知识</title>
             <link>https://www.umi.homes/posts/62621/</link>
-            <category term="前端学习" scheme="https://www.umi.homes/categories/front-end/" />
-            <category term="前端基础" scheme="https://www.umi.homes/categories/front-end/front-end-basis/" />
+            <category term="编程学习" scheme="https://www.umi.homes/categories/coding/" />
+            <category term="前端基础" scheme="https://www.umi.homes/categories/coding/front-end-basis/" />
             <category term="前端" scheme="https://www.umi.homes/tags/%E5%89%8D%E7%AB%AF/" />
             <category term="CSS" scheme="https://www.umi.homes/tags/CSS/" />
             <pubDate>Fri, 14 Oct 2022 16:00:00 +0000</pubDate>
