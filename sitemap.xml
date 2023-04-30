@@ -2,6 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.umi.homes/about/index.html</loc>
+    
+    <lastmod>2023-04-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.umi.homes/archives/index.html</loc>
+    
+    <lastmod>2023-04-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.umi.homes/categories/index.html</loc>
+    
+    <lastmod>2023-04-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.umi.homes/favorites/index.html</loc>
+    
+    <lastmod>2023-04-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.umi.homes/friends/index.html</loc>
     
     <lastmod>2023-04-30</lastmod>
@@ -38,6 +74,15 @@
   </url>
   
   <url>
+    <loc>https://www.umi.homes/posts/3de/</loc>
+    
+    <lastmod>2023-04-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.umi.homes/posts/a53b/</loc>
     
     <lastmod>2023-04-30</lastmod>
@@ -57,33 +102,6 @@
   
   <url>
     <loc>https://www.umi.homes/posts/a3a9/</loc>
-    
-    <lastmod>2023-04-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.umi.homes/posts/3de/</loc>
-    
-    <lastmod>2023-04-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.umi.homes/posts/fba5/</loc>
-    
-    <lastmod>2023-04-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.umi.homes/posts/3b64/</loc>
     
     <lastmod>2023-04-30</lastmod>
     
@@ -236,42 +254,6 @@
   </url>
   
   <url>
-    <loc>https://www.umi.homes/about/index.html</loc>
-    
-    <lastmod>2023-04-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.umi.homes/archives/index.html</loc>
-    
-    <lastmod>2023-04-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.umi.homes/categories/index.html</loc>
-    
-    <lastmod>2023-04-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.umi.homes/favorites/index.html</loc>
-    
-    <lastmod>2023-04-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.umi.homes/posts/c9b1/</loc>
     
     <lastmod>2023-04-30</lastmod>
@@ -291,6 +273,24 @@
   
   <url>
     <loc>https://www.umi.homes/posts/28818/</loc>
+    
+    <lastmod>2023-04-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.umi.homes/posts/fba5/</loc>
+    
+    <lastmod>2023-04-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.umi.homes/posts/3b64/</loc>
     
     <lastmod>2023-04-30</lastmod>
     
@@ -329,13 +329,6 @@
   </url>
   
   <url>
-    <loc>https://www.umi.homes/tags/LeetCode/</loc>
-    <lastmod>2023-04-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.umi.homes/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2023-04-30</lastmod>
     <changefreq>weekly</changefreq>
@@ -344,6 +337,13 @@
   
   <url>
     <loc>https://www.umi.homes/tags/%E8%B4%B9%E6%9B%BC%E5%AD%A6%E4%B9%A0%E6%B3%95/</loc>
+    <lastmod>2023-04-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.umi.homes/tags/LeetCode/</loc>
     <lastmod>2023-04-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -429,14 +429,14 @@
   </url>
   
   <url>
-    <loc>https://www.umi.homes/categories/leetcode/</loc>
+    <loc>https://www.umi.homes/categories/reading/</loc>
     <lastmod>2023-04-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.umi.homes/categories/reading/</loc>
+    <loc>https://www.umi.homes/categories/leetcode/</loc>
     <lastmod>2023-04-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
