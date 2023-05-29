@@ -56,6 +56,42 @@
   </url>
   
   <url>
+    <loc>https://www.umi.homes/posts/564/</loc>
+    
+    <lastmod>2023-05-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.umi.homes/posts/3132/</loc>
+    
+    <lastmod>2023-05-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.umi.homes/posts/b34c/</loc>
+    
+    <lastmod>2023-05-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.umi.homes/posts/cb89/</loc>
+    
+    <lastmod>2023-05-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.umi.homes/posts/d64e/</loc>
     
     <lastmod>2023-05-29</lastmod>
@@ -227,6 +263,15 @@
   </url>
   
   <url>
+    <loc>https://www.umi.homes/posts/63325/</loc>
+    
+    <lastmod>2023-05-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.umi.homes/posts/15489/</loc>
     
     <lastmod>2023-05-29</lastmod>
@@ -245,25 +290,16 @@
   </url>
   
   <url>
-    <loc>https://www.umi.homes/posts/8b5a/</loc>
-    
-    <lastmod>2023-05-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.umi.homes/posts/63325/</loc>
-    
-    <lastmod>2023-05-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.umi.homes/posts/f337/</loc>
+    
+    <lastmod>2023-05-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.umi.homes/posts/8b5a/</loc>
     
     <lastmod>2023-05-29</lastmod>
     
@@ -309,33 +345,6 @@
   
   <url>
     <loc>https://www.umi.homes/posts/4cdb/</loc>
-    
-    <lastmod>2023-05-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.umi.homes/posts/564/</loc>
-    
-    <lastmod>2023-05-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.umi.homes/posts/3132/</loc>
-    
-    <lastmod>2023-05-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.umi.homes/posts/cb89/</loc>
     
     <lastmod>2023-05-29</lastmod>
     
@@ -451,6 +460,20 @@
   </url>
   
   <url>
+    <loc>https://www.umi.homes/tags/%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2023-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.umi.homes/tags/MySQL/</loc>
+    <lastmod>2023-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.umi.homes/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/</loc>
     <lastmod>2023-05-29</lastmod>
     <changefreq>weekly</changefreq>
@@ -503,6 +526,13 @@
   
   <url>
     <loc>https://www.umi.homes/categories/coding/Java%E5%9F%BA%E7%A1%80/</loc>
+    <lastmod>2023-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.umi.homes/categories/coding/simple-notes/</loc>
     <lastmod>2023-05-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
